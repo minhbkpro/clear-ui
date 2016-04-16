@@ -1,0 +1,27 @@
+{
+  "name": "clear-ui",
+  "version": "1.0.0",
+  "description": "Free theme base on bootstrap 3",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minhbkpro/clear-ui.git"
+  },
+  "author": "minhbkpro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/minhbkpro/clear-ui/issues"
+  },
+  "homepage": "https://github.com/minhbkpro/clear-ui#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
