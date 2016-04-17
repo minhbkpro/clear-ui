@@ -1,10 +1,10 @@
 {
-  "name": "clear-ui",
+  "name": "Clear UI",
   "homepage": "https://github.com/minhbkpro/clear-ui",
   "authors": [
     "minhbkpro <minhbkpro@gmail.com>"
   ],
-  "description": "",
+  "description": "Free theme base on bootstrap 3",
   "main": "",
   "license": "MIT",
   "ignore": [
@@ -15,6 +15,6 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "^2.2.3"
+    "bootstrap": "^3.3.6"
   }
 }
