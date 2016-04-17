@@ -1,7 +1,7 @@
 {
 "version": 3,
 "mappings": "AAAA,aAAc;EACZ,kBAAkB,EAAE,IAAI;EACxB,UAAU,EAAE,IAAI;EAChB,aAAa,EAAE,GAAG;EAElB,mBAAQ;IACN,UAAU,EAAE,cAAc;;AAK5B,4BAAc;EACZ,aAAa,EAAE,GAAG;;AAItB;sCACuC;EACrC,WAAW,EAAE,GAAG;;AAGlB;oBACqB;EACnB,WAAW,EAAE,IAAI;;AAGnB,iBAAkB;EAChB,MAAM,EAAE,OAAO;;AC3BjB,MAAO;EACL,aAAa,EAAE,GAAG;EAClB,kBAAkB,EAAE,IAAI;EACxB,UAAU,EAAE,IAAI;;AAGlB,cAAe;EACb,sBAAsB,EAAE,GAAG;EAC3B,uBAAuB,EAAE,GAAG",
-"sources": ["../sass/form.scss","../sass/panel.scss"],
+"sources": ["../../sass/form.scss","../../sass/panel.scss"],
 "names": [],
 "file": "clear-ui.css"
 }
