@@ -6,12 +6,17 @@ module.exports = function(grunt) {
         files: {
           'dist/clear-ui.css' : 'sass/clear-ui.scss'
         }
+      },
+      docs: {
+        files: {
+          'docs/dist/clear-ui.css' : 'sass/clear-ui.scss'
+        }
       }
     },
     watch: {
       sass: {
         files: 'sass/{,*/}*.{scss,sass}',
-        tasks: ['sass:dist']
+        tasks: ['sass:dist', 'sass:docs']
       }
     }
   });
