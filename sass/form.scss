@@ -3,7 +3,7 @@
   box-shadow: none;
   border-radius: 2px;
 
-  &:hover {
+  &:hover:not(:focus) {
     border-top: 1px solid #aaa;
   }
 }
@@ -26,4 +26,34 @@
 
 input[type=radio] {
   margin: 3px 0 0;
+}
+
+.cui-radio label {
+  position: relative;
+}
+
+.cui-radio label input {
+  display: none;
+}
+
+.cui-radio input + ins:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  margin-top: -8px;
+  border: 1px solid #DBDBDB;
+  border-radius: 50%;
+}
+
+.cui-radio:hover input + ins:before,
+.cui-radio label:hover input + ins:before{
+  border-color: #3395FC;
+}
+
+.cui-radio input:checked + ins {
+  border-color: red;
 }

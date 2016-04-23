@@ -1,0 +1,26 @@
+// defined color
+$color-gray: #777;
+$color-gray-dark: darken($color-gray, 6%);
+$color-gray-darker: darken($color-gray, 12%);
+$color-gray-light: lighten($color-gray, 6%);
+$color-gray-lighter: lighten($color-gray, 12%);
+
+$color-blue: #0073b7;
+$color-blue-dark: darken($color-blue, 6%);
+$color-blue-darker: darken($color-blue, 12%);
+$color-blue-light: lighten($color-blue, 6%);
+$color-blue-lighter: lighten($color-blue, 12%);
+
+$color-orange: #ff8216;
+$color-orange-dark: darken($color-orange, 6%);
+$color-orange-darker: darken($color-orange, 12%);
+$color-orange-light: lighten($color-orange, 6%);
+$color-orange-lighter: lighten($color-orange, 12%);
+
+$color-white: #fff;
+
+$color-primary: $color-blue;
+$color-success: #5cb85c;
+$color-info: #5bc0de;
+$color-warning: #f0ad4e;
+$color-danger: #d9534f;
