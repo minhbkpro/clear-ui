@@ -11,6 +11,12 @@ $color-blue-darker: darken($color-blue, 12%);
 $color-blue-light: lighten($color-blue, 6%);
 $color-blue-lighter: lighten($color-blue, 12%);
 
+$color-green: #5cb85c;
+$color-green-dark: darken($color-green, 6%);
+$color-green-darker: darken($color-green, 12%);
+$color-green-light: lighten($color-green, 6%);
+$color-green-lighter: lighten($color-green, 12%);
+
 $color-orange: #ff8216;
 $color-orange-dark: darken($color-orange, 6%);
 $color-orange-darker: darken($color-orange, 12%);
@@ -18,9 +24,15 @@ $color-orange-light: lighten($color-orange, 6%);
 $color-orange-lighter: lighten($color-orange, 12%);
 
 $color-white: #fff;
+$color-white-dark: darken($color-white, 6%);
+$color-white-darker: darken($color-white, 12%);
+
+$color-black: #000;
+$color-black-light: lighten($color-black, 6%);
+$color-black-lighter: lighten($color-black, 12%);
 
 $color-primary: $color-blue;
-$color-success: #5cb85c;
+$color-success: $color-green;
 $color-info: #5bc0de;
 $color-warning: #f0ad4e;
 $color-danger: #d9534f;
