@@ -1,3 +1,26 @@
 .docs-page-title a:hover {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+#docs-sidebar {
+  li {
+    a {
+      border-left: 1px solid transparent;
+      padding: 5px 10px;
+
+      &:hover {
+        background-color: transparent;
+        border-left-width: 1px;
+        border-left-color: #0073b7;
+      }
+    }
+
+    &.active {
+      a {
+        border-left-width: 2px;
+        border-left-color: #0073b7;
+        padding-left: 9px;
+      }
+    }
+  }
 }
