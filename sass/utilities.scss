@@ -1,0 +1,69 @@
+// background
+.bg-gray {
+  background-color: $color-gray;
+}
+
+.bg-gray-dark {
+  background-color: $color-gray-dark;
+}
+
+.bg-gray-darker {
+  background-color: $color-gray-darker;
+}
+
+.bg-gray-light {
+  background-color: $color-gray-light;
+}
+
+.bg-gray-lighter {
+  background-color: $color-gray-lighter;
+}
+
+// text align
+.text-top {
+  vertical-align: top;
+}
+
+.text-middle {
+  vertical-align: middle;
+}
+
+.text-bottom {
+  vertical-align: bottom;
+}
+
+// grid
+.row-plain {
+  display: flex;
+}
+
+// align
+.content-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.content-center {
+  display: flex;
+  justify-content: center;
+}
+
+.content-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content-top {
+  display: flex;
+  align-items: flex-start;
+}
+
+.content-middle {
+  display: flex;
+  align-items: center;
+}
+
+.content-bottom {
+  display: flex;
+  align-items: flex-end;
+}
