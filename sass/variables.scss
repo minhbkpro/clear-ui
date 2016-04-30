@@ -11,17 +11,48 @@ $color-blue-darker: darken($color-blue, 14%);
 $color-blue-light: lighten($color-blue, 7%);
 $color-blue-lighter: lighten($color-blue, 14%);
 
-$color-green: #5cb85c;
+$color-green: #00a65a;
 $color-green-dark: darken($color-green, 7%);
 $color-green-darker: darken($color-green, 14%);
 $color-green-light: lighten($color-green, 7%);
 $color-green-lighter: lighten($color-green, 14%);
+
+// $color-cyan: #5bc0de;
+$color-cyan: #2dacd1;
+$color-cyan-dark: darken($color-cyan, 7%);
+$color-cyan-darker: darken($color-cyan, 14%);
+$color-cyan-light: lighten($color-cyan, 7%);
+$color-cyan-lighter: lighten($color-cyan, 14%);
+
+$color-brown: #d67c1c;
+$color-brown-dark: darken($color-brown, 7%);
+$color-brown-darker: darken($color-brown, 14%);
+$color-brown-light: lighten($color-brown, 7%);
+$color-brown-lighter: lighten($color-brown, 14%);
+
+$color-yellow: #f3c200;
+$color-yellow-dark: darken($color-yellow, 7%);
+$color-yellow-darker: darken($color-yellow, 14%);
+$color-yellow-light: lighten($color-yellow, 7%);
+$color-yellow-lighter: lighten($color-yellow, 14%);
 
 $color-orange: #ff8216;
 $color-orange-dark: darken($color-orange, 7%);
 $color-orange-darker: darken($color-orange, 14%);
 $color-orange-light: lighten($color-orange, 7%);
 $color-orange-lighter: lighten($color-orange, 14%);
+
+$color-red: #ef4836;
+$color-red-dark: darken($color-red, 7%);
+$color-red-darker: darken($color-red, 14%);
+$color-red-light: lighten($color-red, 7%);
+$color-red-lighter: lighten($color-red, 14%);
+
+$color-purple: #605ca8;
+$color-purple-dark: darken($color-purple, 7%);
+$color-purple-darker: darken($color-purple, 14%);
+$color-purple-light: lighten($color-purple, 7%);
+$color-purple-lighter: lighten($color-purple, 14%);
 
 $color-white: #fff;
 $color-white-dark: darken($color-white, 7%);
@@ -33,6 +64,6 @@ $color-black-lighter: lighten($color-black, 14%);
 
 $color-primary: $color-blue;
 $color-success: $color-green;
-$color-info: #5bc0de;
-$color-warning: #f0ad4e;
-$color-danger: #d9534f;
+$color-info: $color-cyan;
+$color-warning: $color-yellow;
+$color-danger: $color-red;
