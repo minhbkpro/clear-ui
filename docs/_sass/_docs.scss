@@ -40,3 +40,7 @@
   box-shadow: 0 0 1px $color-white-darker;
   box-sizing: border-box;
 }
+
+.docs-color-list p {
+  text-transform: capitalize;
+}

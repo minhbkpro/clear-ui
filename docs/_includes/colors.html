@@ -3,238 +3,32 @@
     <a href="#colors" title="Colors">Colors</a>
   </h1>
 
-  <div class="row docs-color-list row-plain margin-bottom-20">
-    <div class="col-sm-2 content-right content-middle">
-      <span class="text-middle">Gray</span>
+  {% for color in site.data.colors %}
+    <div class="row docs-color-list row-plain margin-bottom-10">
+      <div class="col-sm-2 content-right content-middle">
+        <p class="text-middle">{{ color.name }}</p>
+      </div>
+      <div class="col-sm-2 text-center">
+        <div class="docs-color-box bg-{{ color.name }}-lighter"></div>
+        <p>{{ color.name }} Lighter</p>
+      </div>
+      <div class="col-sm-2 text-center">
+        <div class="docs-color-box bg-{{ color.name }}-light"></div>
+        <p>{{ color.name }} Light</p>
+      </div>
+      <div class="col-sm-2 text-center">
+        <div class="docs-color-box bg-{{ color.name }}"></div>
+        <p>{{ color.name }}</p>
+      </div>
+      <div class="col-sm-2 text-center">
+        <div class="docs-color-box bg-{{ color.name }}-dark"></div>
+        <p>{{ color.name }} Dark</p>
+      </div>
+      <div class="col-sm-2 text-center">
+        <div class="docs-color-box bg-{{ color.name }}-darker"></div>
+        <p>{{ color.name }} Darker</p>
+      </div>
     </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-gray-lighter"></div>
-      <div>Gray Lighter</div>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-gray-light"></div>
-      <div>Gray Light</div>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-gray"></div>
-      <div>Gray</div>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-gray-dark"></div>
-      <div>Gray Dark</div>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-gray-darker"></div>
-      <div>Gray Darker</div>
-    </div>
-  </div>
-
-  <div class="row docs-color-list row-plain margin-bottom-20">
-    <div class="col-sm-2 content-right content-middle">
-      <span class="text-middle">Blue</span>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-blue-lighter"></div>
-      <div>Blue Lighter</div>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-blue-light"></div>
-      <div>Blue Light</div>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-blue"></div>
-      <div>Blue</div>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-blue-dark"></div>
-      <div>Blue Dark</div>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-blue-darker"></div>
-      <div>Blue Darker</div>
-    </div>
-  </div>
-
-  <div class="row docs-color-list row-plain margin-bottom-20">
-    <div class="col-sm-2 content-right content-middle">
-      <span class="text-middle">Green</span>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-green-lighter"></div>
-      <div>Green Lighter</div>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-green-light"></div>
-      <div>Green Light</div>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-green"></div>
-      <div>Green</div>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-green-dark"></div>
-      <div>Green Dark</div>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-green-darker"></div>
-      <div>Green Darker</div>
-    </div>
-  </div>
-
-  <div class="row docs-color-list row-plain margin-bottom-20">
-    <div class="col-sm-2 content-right content-middle">
-      <span class="text-middle">Cyan</span>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-cyan-lighter"></div>
-      <div>Cyan Lighter</div>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-cyan-light"></div>
-      <div>Cyan Light</div>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-cyan"></div>
-      <div>Cyan</div>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-cyan-dark"></div>
-      <div>Cyan Dark</div>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-cyan-darker"></div>
-      <div>Cyan Darker</div>
-    </div>
-  </div>
-
-  <div class="row docs-color-list row-plain margin-bottom-20">
-    <div class="col-sm-2 content-right content-middle">
-      <span class="text-middle">Brown</span>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-brown-lighter"></div>
-      <div>Brown Lighter</div>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-brown-light"></div>
-      <div>Brown Light</div>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-brown"></div>
-      <div>Brown</div>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-brown-dark"></div>
-      <div>Brown Dark</div>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-brown-darker"></div>
-      <div>Brown Darker</div>
-    </div>
-  </div>
-
-  <div class="row docs-color-list row-plain margin-bottom-20">
-    <div class="col-sm-2 content-right content-middle">
-      <span class="text-middle">Yellow</span>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-yellow-lighter"></div>
-      <div>Yellow Lighter</div>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-yellow-light"></div>
-      <div>Yellow Light</div>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-yellow"></div>
-      <div>Yellow</div>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-yellow-dark"></div>
-      <div>Yellow Dark</div>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-yellow-darker"></div>
-      <div>Yellow Darker</div>
-    </div>
-  </div>
-
-  <div class="row docs-color-list row-plain margin-bottom-20">
-    <div class="col-sm-2 content-right content-middle">
-      <span class="text-middle">Orange</span>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-orange-lighter"></div>
-      <div>Orange Lighter</div>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-orange-light"></div>
-      <div>Orange Light</div>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-orange"></div>
-      <div>Orange</div>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-orange-dark"></div>
-      <div>Orange Dark</div>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-orange-darker"></div>
-      <div>Orange Darker</div>
-    </div>
-  </div>
-
-  <div class="row docs-color-list row-plain margin-bottom-20">
-    <div class="col-sm-2 content-right content-middle">
-      <span class="text-middle">Red</span>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-red-lighter"></div>
-      <div>Red Lighter</div>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-red-light"></div>
-      <div>Red Light</div>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-red"></div>
-      <div>Red</div>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-red-dark"></div>
-      <div>Red Dark</div>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-red-darker"></div>
-      <div>Red Darker</div>
-    </div>
-  </div>
-
-  <div class="row docs-color-list row-plain margin-bottom-20">
-    <div class="col-sm-2 content-right content-middle">
-      <span class="text-middle">Purple</span>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-purple-lighter"></div>
-      <div>Purple Lighter</div>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-purple-light"></div>
-      <div>Purple Light</div>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-purple"></div>
-      <div>Purple</div>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-purple-dark"></div>
-      <div>Purple Dark</div>
-    </div>
-    <div class="col-sm-2 text-center">
-      <div class="docs-color-box bg-purple-darker"></div>
-      <div>Purple Darker</div>
-    </div>
-  </div>
+  {% endfor %}
 
 </section>
