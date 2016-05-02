@@ -21,245 +21,31 @@
   border-color: #ccc !important;
 }
 
-.btn-gray {
-  background-color: $color-gray;
-  color: $color-white !important;
+@each $name, $colors in $colors-map {
+  .btn-#{$name} {
+    background-color: nth($colors, 3);
+    color: $color-white !important;
 
-  &.active,
-  &:active,
-  &.focus,
-  &:focus,
-  &:hover {
-    background-color: $color-gray-dark;
-  }
-
-  &.active,
-  &:active,
-  &.focus,
-  &:focus {
+    &.active,
+    &:active,
+    &.focus,
+    &:focus,
     &:hover {
-      background-color: $color-gray-darker;
+      background-color: nth($colors, 4);
     }
-  }
 
-  &.disabled,
-  &[disabled] {
-    background-color: $color-gray-light !important;
-  }
-}
-
-.btn-blue {
-  background-color: $color-blue;
-  color: $color-white !important;
-
-  &.active,
-  &:active,
-  &.focus,
-  &:focus,
-  &:hover {
-    background-color: $color-blue-dark;
-  }
-
-  &.active,
-  &:active,
-  &.focus,
-  &:focus {
-    &:hover {
-      background-color: $color-blue-darker;
+    &.active,
+    &:active,
+    &.focus,
+    &:focus {
+      &:hover {
+        background-color: nth($colors, 5);
+      }
     }
-  }
 
-  &.disabled,
-  &[disabled] {
-    background-color: $color-blue-light !important;
-  }
-}
-
-.btn-green {
-  background-color: $color-green;
-  color: $color-white !important;
-
-  &.active,
-  &:active,
-  &.focus,
-  &:focus,
-  &:hover {
-    background-color: $color-green-dark;
-  }
-
-  &.active,
-  &:active,
-  &.focus,
-  &:focus {
-    &:hover {
-      background-color: $color-green-darker;
+    &.disabled,
+    &[disabled] {
+      background-color: nth($colors, 2) !important;
     }
-  }
-
-  &.disabled,
-  &[disabled] {
-    background-color: $color-green-light !important;
-  }
-}
-
-.btn-cyan {
-  background-color: $color-cyan;
-  color: $color-white !important;
-
-  &.active,
-  &:active,
-  &.focus,
-  &:focus,
-  &:hover {
-    background-color: $color-cyan-dark;
-  }
-
-  &.active,
-  &:active,
-  &.focus,
-  &:focus {
-    &:hover {
-      background-color: $color-cyan-darker;
-    }
-  }
-
-  &.disabled,
-  &[disabled] {
-    background-color: $color-cyan-light !important;
-  }
-}
-
-.btn-brown {
-  background-color: $color-brown;
-  color: $color-white !important;
-
-  &.active,
-  &:active,
-  &.focus,
-  &:focus,
-  &:hover {
-    background-color: $color-brown-dark;
-  }
-
-  &.active,
-  &:active,
-  &.focus,
-  &:focus {
-    &:hover {
-      background-color: $color-brown-darker;
-    }
-  }
-
-  &.disabled,
-  &[disabled] {
-    background-color: $color-brown-light !important;
-  }
-}
-
-.btn-yellow {
-  background-color: $color-yellow;
-  color: $color-white !important;
-
-  &.active,
-  &:active,
-  &.focus,
-  &:focus,
-  &:hover {
-    background-color: $color-yellow-dark;
-  }
-
-  &.active,
-  &:active,
-  &.focus,
-  &:focus {
-    &:hover {
-      background-color: $color-yellow-darker;
-    }
-  }
-
-  &.disabled,
-  &[disabled] {
-    background-color: $color-yellow-light !important;
-  }
-}
-
-.btn-orange {
-  background-color: $color-orange;
-  color: $color-white !important;
-
-  &.active,
-  &:active,
-  &.focus,
-  &:focus,
-  &:hover {
-    background-color: $color-orange-dark;
-  }
-
-  &.active,
-  &:active,
-  &.focus,
-  &:focus {
-    &:hover {
-      background-color: $color-orange-darker;
-    }
-  }
-
-  &.disabled,
-  &[disabled] {
-    background-color: $color-orange-light !important;
-  }
-}
-
-.btn-red {
-  background-color: $color-red;
-  color: $color-white !important;
-
-  &.active,
-  &:active,
-  &.focus,
-  &:focus,
-  &:hover {
-    background-color: $color-red-dark;
-  }
-
-  &.active,
-  &:active,
-  &.focus,
-  &:focus {
-    &:hover {
-      background-color: $color-red-darker;
-    }
-  }
-
-  &.disabled,
-  &[disabled] {
-    background-color: $color-red-light !important;
-  }
-}
-
-.btn-purple {
-  background-color: $color-purple;
-  color: $color-white !important;
-
-  &.active,
-  &:active,
-  &.focus,
-  &:focus,
-  &:hover {
-    background-color: $color-purple-dark;
-  }
-
-  &.active,
-  &:active,
-  &.focus,
-  &:focus {
-    &:hover {
-      background-color: $color-purple-darker;
-    }
-  }
-
-  &.disabled,
-  &[disabled] {
-    background-color: $color-purple-light !important;
   }
 }

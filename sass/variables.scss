@@ -61,8 +61,22 @@ $color-black: #000;
 $color-black-light: lighten($color-black, 7%);
 $color-black-lighter: lighten($color-black, 14%);
 
+// functional colors
 $color-primary: $color-blue;
 $color-success: $color-green;
 $color-info: $color-cyan;
 $color-warning: $color-yellow;
 $color-danger: $color-red;
+
+// color lists
+$colors-map: (
+  "gray": ($color-gray-lighter, $color-gray-light, $color-gray, $color-gray-dark, $color-gray-darker),
+  "blue": ($color-blue-lighter, $color-blue-light, $color-blue, $color-blue-dark, $color-blue-darker),
+  "green": ($color-green-lighter, $color-green-light, $color-green, $color-green-dark, $color-green-darker),
+  "cyan": ($color-cyan-lighter, $color-cyan-light, $color-cyan, $color-cyan-dark, $color-cyan-darker),
+  "brown": ($color-brown-lighter, $color-brown-light, $color-brown, $color-brown-dark, $color-brown-darker),
+  "yellow": ($color-yellow-lighter, $color-yellow-light, $color-yellow, $color-yellow-dark, $color-yellow-darker),
+  "orange": ($color-orange-lighter, $color-orange-light, $color-orange, $color-orange-dark, $color-orange-darker),
+  "red": ($color-red-lighter, $color-red-light, $color-red, $color-red-dark, $color-red-darker),
+  "purple": ($color-purple-lighter, $color-purple-light, $color-purple, $color-purple-dark, $color-purple-darker)
+)
