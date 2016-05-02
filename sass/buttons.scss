@@ -18,7 +18,11 @@
 }
 
 .btn-default {
-  border-color: #ccc !important;
+  border-color: #cacaca !important;
+
+  &:hover {
+    background-color: $color-white-dark;
+  }
 }
 
 @each $name, $colors in $colors-map {
