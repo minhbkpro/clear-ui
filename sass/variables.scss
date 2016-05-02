@@ -58,8 +58,8 @@ $color-white-dark: darken($color-white, 7%);
 $color-white-darker: darken($color-white, 14%);
 
 $color-black: #000;
-$color-black-light: lighten($color-black, 7%);
-$color-black-lighter: lighten($color-black, 14%);
+$color-black-light: lighten($color-black, 10%);
+$color-black-lighter: lighten($color-black, 20%);
 
 // functional colors
 $color-primary: $color-blue;

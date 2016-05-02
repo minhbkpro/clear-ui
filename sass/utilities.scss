@@ -1,182 +1,48 @@
 // background
-.bg-gray {
-  background-color: $color-gray;
+@each $name, $colors in $colors-map {
+  .bg-#{$name}-lighter {
+    background-color: nth($colors, 1);
+  }
+
+  .bg-#{$name}-light {
+    background-color: nth($colors, 2);
+  }
+
+  .bg-#{$name} {
+    background-color: nth($colors, 3);
+  }
+
+  .bg-#{$name}-dark {
+    background-color: nth($colors, 4);
+  }
+
+  .bg-#{$name}-darker {
+    background-color: nth($colors, 5);
+  }
 }
 
-.bg-gray-dark {
-  background-color: $color-gray-dark;
+.bg-white {
+  background-color: $color-white;
 }
 
-.bg-gray-darker {
-  background-color: $color-gray-darker;
+.bg-white-dark {
+  background-color: $color-white-dark;
 }
 
-.bg-gray-light {
-  background-color: $color-gray-light;
+.bg-white-darker {
+  background-color: $color-white-darker;
 }
 
-.bg-gray-lighter {
-  background-color: $color-gray-lighter;
+.bg-black-lighter {
+  background-color: $color-black-lighter;
 }
 
-.bg-blue {
-  background-color: $color-blue;
+.bg-black-light {
+  background-color: $color-black-light;
 }
 
-.bg-blue-dark {
-  background-color: $color-blue-dark;
-}
-
-.bg-blue-darker {
-  background-color: $color-blue-darker;
-}
-
-.bg-blue-light {
-  background-color: $color-blue-light;
-}
-
-.bg-blue-lighter {
-  background-color: $color-blue-lighter;
-}
-
-.bg-green {
-  background-color: $color-green;
-}
-
-.bg-green-dark {
-  background-color: $color-green-dark;
-}
-
-.bg-green-darker {
-  background-color: $color-green-darker;
-}
-
-.bg-green-light {
-  background-color: $color-green-light;
-}
-
-.bg-green-lighter {
-  background-color: $color-green-lighter;
-}
-
-.bg-cyan {
-  background-color: $color-cyan;
-}
-
-.bg-cyan-dark {
-  background-color: $color-cyan-dark;
-}
-
-.bg-cyan-darker {
-  background-color: $color-cyan-darker;
-}
-
-.bg-cyan-light {
-  background-color: $color-cyan-light;
-}
-
-.bg-cyan-lighter {
-  background-color: $color-cyan-lighter;
-}
-
-.bg-orange {
-  background-color: $color-orange;
-}
-
-.bg-orange-dark {
-  background-color: $color-orange-dark;
-}
-
-.bg-orange-darker {
-  background-color: $color-orange-darker;
-}
-
-.bg-orange-light {
-  background-color: $color-orange-light;
-}
-
-.bg-orange-lighter {
-  background-color: $color-orange-lighter;
-}
-
-.bg-yellow {
-  background-color: $color-yellow;
-}
-
-.bg-yellow-dark {
-  background-color: $color-yellow-dark;
-}
-
-.bg-yellow-darker {
-  background-color: $color-yellow-darker;
-}
-
-.bg-yellow-light {
-  background-color: $color-yellow-light;
-}
-
-.bg-yellow-lighter {
-  background-color: $color-yellow-lighter;
-}
-
-.bg-red {
-  background-color: $color-red;
-}
-
-.bg-red-dark {
-  background-color: $color-red-dark;
-}
-
-.bg-red-darker {
-  background-color: $color-red-darker;
-}
-
-.bg-red-light {
-  background-color: $color-red-light;
-}
-
-.bg-red-lighter {
-  background-color: $color-red-lighter;
-}
-
-.bg-brown {
-  background-color: $color-brown;
-}
-
-.bg-brown-dark {
-  background-color: $color-brown-dark;
-}
-
-.bg-brown-darker {
-  background-color: $color-brown-darker;
-}
-
-.bg-brown-light {
-  background-color: $color-brown-light;
-}
-
-.bg-brown-lighter {
-  background-color: $color-brown-lighter;
-}
-
-.bg-purple {
-  background-color: $color-purple;
-}
-
-.bg-purple-dark {
-  background-color: $color-purple-dark;
-}
-
-.bg-purple-darker {
-  background-color: $color-purple-darker;
-}
-
-.bg-purple-light {
-  background-color: $color-purple-light;
-}
-
-.bg-purple-lighter {
-  background-color: $color-purple-lighter;
+.bg-black {
+  background-color: $color-black;
 }
 
 // text align
@@ -228,147 +94,13 @@
   align-items: flex-end;
 }
 
-// margin
-.margin-top-5 {
-  margin-top: 5px;
-}
-
-.margin-top-10 {
-  margin-top: 10px;
-}
-
-.margin-top-15 {
-  margin-top: 15px;
-}
-
-.margin-top-20 {
-  margin-top: 20px;
-}
-
-.margin-top-30 {
-  margin-top: 30px;
-}
-
-.margin-top-40 {
-  margin-top: 40px;
-}
-
-.margin-top-60 {
-  margin-top: 60px;
-}
-
-.margin-top-80 {
-  margin-top: 80px;
-}
-
-.margin-top-100 {
-  margin-top: 100px;
-}
-
-.margin-right-5 {
-  margin-right: 5px;
-}
-
-.margin-right-10 {
-  margin-right: 10px;
-}
-
-.margin-right-15 {
-  margin-right: 15px;
-}
-
-.margin-right-20 {
-  margin-right: 20px;
-}
-
-.margin-right-30 {
-  margin-right: 30px;
-}
-
-.margin-right-40 {
-  margin-right: 40px;
-}
-
-.margin-right-60 {
-  margin-right: 60px;
-}
-
-.margin-right-80 {
-  margin-right: 80px;
-}
-
-.margin-right-100 {
-  margin-right: 100px;
-}
-
-.margin-bottom-5 {
-  margin-bottom: 5px;
-}
-
-.margin-bottom-10 {
-  margin-bottom: 10px;
-}
-
-.margin-bottom-15 {
-  margin-bottom: 15px;
-}
-
-.margin-bottom-20 {
-  margin-bottom: 20px;
-}
-
-.margin-bottom-30 {
-  margin-bottom: 30px;
-}
-
-.margin-bottom-40 {
-  margin-bottom: 40px;
-}
-
-.margin-bottom-60 {
-  margin-bottom: 60px;
-}
-
-.margin-bottom-80 {
-  margin-bottom: 80px;
-}
-
-.margin-bottom-100 {
-  margin-bottom: 100px;
-}
-
-.margin-left-5 {
-  margin-left: 5px;
-}
-
-.margin-left-10 {
-  margin-left: 10px;
-}
-
-.margin-left-15 {
-  margin-left: 15px;
-}
-
-.margin-left-20 {
-  margin-left: 20px;
-}
-
-.margin-left-30 {
-  margin-left: 30px;
-}
-
-.margin-left-40 {
-  margin-left: 40px;
-}
-
-.margin-left-60 {
-  margin-left: 60px;
-}
-
-.margin-left-80 {
-  margin-left: 80px;
-}
-
-.margin-left-100 {
-  margin-left: 100px;
+// margin, padding
+@each $prop in margin, padding {
+  @each $orientation in top, right, bottom, left {
+    @each $value in 5, 10, 15, 20, 30, 40, 60, 80, 100 {
+      .#{$prop}-#{$orientation}-#{$value} {
+        margin-top: #{$value}px;
+      }
+    }
+  }
 }
