@@ -11,6 +11,12 @@ $color-blue-darker: darken($color-blue, 14%);
 $color-blue-light: lighten($color-blue, 7%);
 $color-blue-lighter: lighten($color-blue, 14%);
 
+$color-teal: #009688;
+$color-teal-dark: darken($color-teal, 7%);
+$color-teal-darker: darken($color-teal, 14%);
+$color-teal-light: lighten($color-teal, 7%);
+$color-teal-lighter: lighten($color-teal, 14%);
+
 $color-green: #00a65a;
 $color-green-dark: darken($color-green, 7%);
 $color-green-darker: darken($color-green, 14%);
@@ -72,6 +78,7 @@ $color-danger: $color-red;
 $colors-map: (
   "gray": ($color-gray-lighter, $color-gray-light, $color-gray, $color-gray-dark, $color-gray-darker),
   "blue": ($color-blue-lighter, $color-blue-light, $color-blue, $color-blue-dark, $color-blue-darker),
+  "teal": ($color-teal-lighter, $color-teal-light, $color-teal, $color-teal-dark, $color-teal-darker),
   "green": ($color-green-lighter, $color-green-light, $color-green, $color-green-dark, $color-green-darker),
   "cyan": ($color-cyan-lighter, $color-cyan-light, $color-cyan, $color-cyan-dark, $color-cyan-darker),
   "brown": ($color-brown-lighter, $color-brown-light, $color-brown, $color-brown-dark, $color-brown-darker),
