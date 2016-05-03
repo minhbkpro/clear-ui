@@ -2,13 +2,13 @@
   border-radius: 2px;
   outline: none !important;
 
-  &:not(.disabled, [disabled]) {
+  &:not(.disabled):not([disabled]) {
     &.active,
     &:active,
     &.focus,
     &:focus {
-      -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .05);
-      box-shadow: inset 0 3px 5px rgba(0, 0, 0, .05);
+      -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .08);
+      box-shadow: inset 0 3px 5px rgba(0, 0, 0, .08);
     }
   }
 
