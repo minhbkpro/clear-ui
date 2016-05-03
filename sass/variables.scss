@@ -29,11 +29,11 @@ $color-cyan-darker: darken($color-cyan, 14%);
 $color-cyan-light: lighten($color-cyan, 7%);
 $color-cyan-lighter: lighten($color-cyan, 14%);
 
-$color-brown: #c8741a;
-$color-brown-dark: darken($color-brown, 7%);
-$color-brown-darker: darken($color-brown, 14%);
-$color-brown-light: lighten($color-brown, 7%);
-$color-brown-lighter: lighten($color-brown, 14%);
+$color-lime: #cddc39;
+$color-lime-dark: darken($color-lime, 7%);
+$color-lime-darker: darken($color-lime, 14%);
+$color-lime-light: lighten($color-lime, 7%);
+$color-lime-lighter: lighten($color-lime, 14%);
 
 $color-yellow: #f3c200;
 $color-yellow-dark: darken($color-yellow, 7%);
@@ -47,13 +47,19 @@ $color-orange-darker: darken($color-orange, 14%);
 $color-orange-light: lighten($color-orange, 7%);
 $color-orange-lighter: lighten($color-orange, 14%);
 
+$color-brown: #c8741a;
+$color-brown-dark: darken($color-brown, 7%);
+$color-brown-darker: darken($color-brown, 14%);
+$color-brown-light: lighten($color-brown, 7%);
+$color-brown-lighter: lighten($color-brown, 14%);
+
 $color-red: #ef4836;
 $color-red-dark: darken($color-red, 7%);
 $color-red-darker: darken($color-red, 14%);
 $color-red-light: lighten($color-red, 7%);
 $color-red-lighter: lighten($color-red, 14%);
 
-$color-purple: #605ca8;
+$color-purple: #9C27B0;
 $color-purple-dark: darken($color-purple, 7%);
 $color-purple-darker: darken($color-purple, 14%);
 $color-purple-light: lighten($color-purple, 7%);
@@ -81,9 +87,10 @@ $colors-map: (
   "teal": ($color-teal-lighter, $color-teal-light, $color-teal, $color-teal-dark, $color-teal-darker),
   "green": ($color-green-lighter, $color-green-light, $color-green, $color-green-dark, $color-green-darker),
   "cyan": ($color-cyan-lighter, $color-cyan-light, $color-cyan, $color-cyan-dark, $color-cyan-darker),
-  "brown": ($color-brown-lighter, $color-brown-light, $color-brown, $color-brown-dark, $color-brown-darker),
+  "lime": ($color-lime-lighter, $color-lime-light, $color-lime, $color-lime-dark, $color-lime-darker),
   "yellow": ($color-yellow-lighter, $color-yellow-light, $color-yellow, $color-yellow-dark, $color-yellow-darker),
   "orange": ($color-orange-lighter, $color-orange-light, $color-orange, $color-orange-dark, $color-orange-darker),
+  "brown": ($color-brown-lighter, $color-brown-light, $color-brown, $color-brown-dark, $color-brown-darker),
   "red": ($color-red-lighter, $color-red-light, $color-red, $color-red-dark, $color-red-darker),
   "purple": ($color-purple-lighter, $color-purple-light, $color-purple, $color-purple-dark, $color-purple-darker)
 )

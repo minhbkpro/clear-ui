@@ -3,8 +3,9 @@
 - name: teal
 - name: green
 - name: cyan
-- name: brown
+- name: lime
 - name: yellow
 - name: orange
+- name: brown
 - name: red
 - name: purple
