@@ -17,14 +17,6 @@
   }
 }
 
-.btn-default {
-  border-color: #dadada !important;
-
-  &:hover {
-    background-color: $color-white-dark;
-  }
-}
-
 @each $name, $colors in $colors-map {
   .btn-#{$name} {
     background-color: nth($colors, 3);
@@ -52,4 +44,33 @@
       background-color: nth($colors, 2) !important;
     }
   }
+}
+
+// labeled buttons
+.btn-default {
+  border-color: #dadada !important;
+
+  &:hover {
+    background-color: $color-white-dark;
+  }
+}
+
+.btn-primary {
+  @extend .btn-blue;
+}
+
+.btn-success {
+  @extend .btn-green;
+}
+
+.btn-info {
+  @extend .btn-cyan;
+}
+
+.btn-warning {
+  @extend .btn-yellow;
+}
+
+.btn-danger {
+  @extend .btn-red;
 }
