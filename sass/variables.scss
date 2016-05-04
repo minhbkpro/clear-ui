@@ -53,17 +53,23 @@ $color-orange-darker: darken($color-orange, 14%);
 $color-orange-light: lighten($color-orange, 7%);
 $color-orange-lighter: lighten($color-orange, 14%);
 
-$color-brown: #c8741a;
-$color-brown-dark: darken($color-brown, 7%);
-$color-brown-darker: darken($color-brown, 14%);
-$color-brown-light: lighten($color-brown, 7%);
-$color-brown-lighter: lighten($color-brown, 14%);
+$color-pink: #E91E63;
+$color-pink-dark: darken($color-pink, 7%);
+$color-pink-darker: darken($color-pink, 14%);
+$color-pink-light: lighten($color-pink, 7%);
+$color-pink-lighter: lighten($color-pink, 14%);
 
 $color-red: #ef4836;
 $color-red-dark: darken($color-red, 7%);
 $color-red-darker: darken($color-red, 14%);
 $color-red-light: lighten($color-red, 7%);
 $color-red-lighter: lighten($color-red, 14%);
+
+$color-brown: #c8741a;
+$color-brown-dark: darken($color-brown, 7%);
+$color-brown-darker: darken($color-brown, 14%);
+$color-brown-light: lighten($color-brown, 7%);
+$color-brown-lighter: lighten($color-brown, 14%);
 
 $color-purple: #9C27B0;
 $color-purple-dark: darken($color-purple, 7%);
@@ -97,7 +103,8 @@ $colors-map: (
   "lime": ($color-lime-lighter, $color-lime-light, $color-lime, $color-lime-dark, $color-lime-darker),
   "yellow": ($color-yellow-lighter, $color-yellow-light, $color-yellow, $color-yellow-dark, $color-yellow-darker),
   "orange": ($color-orange-lighter, $color-orange-light, $color-orange, $color-orange-dark, $color-orange-darker),
-  "brown": ($color-brown-lighter, $color-brown-light, $color-brown, $color-brown-dark, $color-brown-darker),
+  "pink": ($color-pink-lighter, $color-pink-light, $color-pink, $color-pink-dark, $color-pink-darker),
   "red": ($color-red-lighter, $color-red-light, $color-red, $color-red-dark, $color-red-darker),
+  "brown": ($color-brown-lighter, $color-brown-light, $color-brown, $color-brown-dark, $color-brown-darker),
   "purple": ($color-purple-lighter, $color-purple-light, $color-purple, $color-purple-dark, $color-purple-darker)
 )
