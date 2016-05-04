@@ -46,6 +46,11 @@
   }
 }
 
+.btn-shadow {
+  @extend .box-shadow;
+  background-color: $color-white;
+}
+
 // labeled buttons
 .btn-default {
   border-color: #dadada !important;
