@@ -4,6 +4,29 @@
   text-decoration: none;
 }
 
+h1.docs-page-title {
+  position: relative;
+}
+
+h1.docs-page-title:after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  z-index: 0;
+  top: 50%;
+  margin-top: 5px;
+  border-bottom: 1px solid $color-white-darker;
+}
+
+h1.docs-page-title a {
+  position: relative;
+  z-index: 1;
+  background-color: $color-white;
+  padding-right: 10px;
+}
+
 #docs-sidebar {
   li {
     a {
