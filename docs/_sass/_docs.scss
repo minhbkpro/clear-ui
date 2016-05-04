@@ -37,6 +37,9 @@
   width: 100px;
   height: 80px;
   margin: auto;
-  box-shadow: 0 0 1px $color-white-darker;
   border-radius: 2px;
+
+  &.bg-white {
+    box-shadow: 0 0 1px $color-white-darker;
+  }
 }
