@@ -48,15 +48,52 @@
 
 .btn-shadow {
   @extend .box-shadow;
+  border: none;
+  padding: 6px 11px;
   background-color: $color-white;
+
+  &.active,
+  &:active,
+  &.focus,
+  &:focus,
+  &:hover {
+    background-color: $color-white-dark;
+  }
+
+  &.active,
+  &:active,
+  &.focus,
+  &:focus {
+    &:hover {
+      background-color: $color-white-darker;
+    }
+  }
+
+  &.disabled,
+  &[disabled] {
+    background-color: $color-white-dark !important;
+  }
 }
 
 // labeled buttons
 .btn-default {
   border-color: #dadada !important;
 
+  &.active,
+  &:active,
+  &.focus,
+  &:focus,
   &:hover {
     background-color: $color-white-dark;
+  }
+
+  &.active,
+  &:active,
+  &.focus,
+  &:focus {
+    &:hover {
+      background-color: $color-white-darker;
+    }
   }
 }
 
@@ -78,4 +115,28 @@
 
 .btn-danger {
   @extend .btn-red;
+}
+
+// button icon
+.btn-icon {
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  text-align: center;
+
+  &.btn-xs {
+    width: 22px;
+    height: 22px;
+  }
+
+  &.btn-sm {
+    width: 30px;
+    height: 30px;
+  }
+
+  &.btn-lg {
+    width: 46px;
+    height: 46px;
+  }
 }
