@@ -52,12 +52,16 @@
   padding: 6px 11px;
   background-color: $color-white;
 
+  &:hover {
+    background-color: $color-white-dark;
+  }
+
   &.active,
   &:active,
   &.focus,
-  &:focus,
-  &:hover {
+  &:focus {
     background-color: $color-white-dark;
+    text-shadow: 0 2px 3px $color-white;
   }
 
   &.active,
