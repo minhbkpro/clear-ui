@@ -29,10 +29,9 @@ input[type=radio] {
 }
 
 .cui-radio {
-  display: inline-block;
   position: relative;
 
-  & + .cui-radio {
+  &.inline-block + &.inline-block {
     margin-left: 10px;
   }
 
@@ -85,5 +84,39 @@ input[type=radio] {
   &:hover input:not(:checked) + ins,
   label:hover input:not(:checked) + ins{
     border-color: $color-blue-light;
+  }
+}
+
+.cui-checkbox {
+  @extend .cui-radio;
+
+  input {
+    & + ins {
+      border-radius: 1px;
+    }
+
+    &:checked {
+      & + ins {
+        &:before {
+          background-color: transparent;
+          border-radius: 0;
+          -webkit-transform: rotate(-50deg);
+          -ms-transform: rotate(-50deg);
+          -o-transform: rotate(-50deg);
+          transform: rotate(-50deg);
+          width: 10px;
+          height: 5px;
+          border-bottom: 2px solid $color-white;
+          border-left: 2px solid $color-white;
+          border-bottom-left-radius: 1px;
+          left: 50%;
+          top: 50%;
+          margin-left: -5px;
+          margin-top: -3px;
+          -webkit-box-shadow: -1px 3px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: -1px 3px 4px rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
   }
 }
