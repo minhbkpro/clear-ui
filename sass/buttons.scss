@@ -1,3 +1,22 @@
+// mixin
+@mixin btn-no-border {
+  border: none;
+  padding: 7px 13px;
+
+  &.btn-xs {
+    padding: 2px 6px;
+  }
+
+  &.btn-sm {
+    padding: 6px 11px;
+  }
+
+  &.btn-lg {
+    padding: 11px 17px;
+  }
+}
+// end mixin
+
 .btn {
   border-radius: 2px;
   outline: none !important;
@@ -14,20 +33,7 @@
 
   &:not(.btn-default) {
     border-color: transparent !important;
-    border: none;
-    padding: 7px 13px;
-
-    &.btn-xs {
-      padding: 2px 6px;
-    }
-
-    &.btn-sm {
-      padding: 6px 11px;
-    }
-
-    &.btn-lg {
-      padding: 11px 17px;
-    }
+    @include btn-no-border;
   }
 }
 
@@ -64,6 +70,10 @@
   @extend .box-shadow;
   background-color: $color-white;
 
+  &.active,
+  &:active,
+  &.focus,
+  &:focus,
   &:hover {
     background-color: $color-white-dark;
   }
@@ -72,14 +82,8 @@
   &:active,
   &.focus,
   &:focus {
-    background-color: $color-white-dark;
     text-shadow: 0 2px 3px $color-white;
-  }
 
-  &.active,
-  &:active,
-  &.focus,
-  &:focus {
     &:hover {
       background-color: $color-white-darker;
     }
@@ -107,6 +111,8 @@
   &:active,
   &.focus,
   &:focus {
+    @include btn-no-border;
+
     &:hover {
       background-color: $color-white-darker;
     }
