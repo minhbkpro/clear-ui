@@ -120,3 +120,104 @@ input[type=radio] {
     }
   }
 }
+
+// select
+.cui-select {
+  // display: none;
+
+  &.dropdown {
+    display: block;
+
+    .dropdown-toggle {
+      height: 34px;
+      width: 100%;
+      position: relative;
+      border: 1px solid #ccc;
+      display: block;
+      border-radius: 2px;
+      cursor: pointer;
+
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        margin-top: -3px;
+        right: 10px;
+        width: 0;
+        height: 0;
+        border-top: 6px solid $color-black-lighter;
+        border-right: 4px solid transparent;
+        border-bottom: 6px solid transparent;
+        border-left: 4px solid transparent;
+      }
+    }
+
+    .dropdown-menu {
+      width: 100%;
+      margin: -1px 0 0 0;
+      border-radius: 0 0 2px 2px;
+      border-color: #66afe9;
+      border-top-color: rgba(#66afe9, .2);
+      outline: 0;
+      -webkit-box-shadow: 0 4px 6px rgba(102, 175, 233, .4);
+      box-shadow: 0 4px 6px rgba(102, 175, 233, .4);
+      padding: 0;
+
+      li {
+        a {
+          &:hover {
+            background-color: #66afe9;
+            color: $color-white;
+          }
+        }
+      }
+
+      .divider {
+        margin: 4px 0;
+      }
+
+      .dropdown-header {
+        position: relative;
+        padding: 3px 5px;
+
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          width: 100%;
+          height: 0;
+          border-top: 1px solid rgba(#66afe9, .2);
+          z-index: 1;
+        }
+
+        span {
+          padding: 0 5px;
+          position: relative;
+          z-index: 2;
+          background-color: $color-white;
+        }
+      }
+    }
+  }
+
+  &.open {
+    .dropdown-toggle {
+      border-color: #66afe9;
+      outline: 0;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075),0 0 8px rgba(102, 175, 233, .6);
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      border-bottom: none;
+
+      &:after {
+        border-top-color: transparent;
+        border-bottom-color: $color-black-lighter;
+        margin-top: -9px;
+      }
+    }
+  }
+}
