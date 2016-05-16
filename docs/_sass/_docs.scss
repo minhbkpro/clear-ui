@@ -15,13 +15,13 @@ h1.docs-page-title:after {
   z-index: 0;
   top: 50%;
   margin-top: 5px;
-  border-bottom: 1px solid $color-white-darker;
+  border-bottom: 1px solid #ebebeb;
 }
 
 h1.docs-page-title a {
   position: relative;
   z-index: 1;
-  background-color: $color-white;
+  background-color: #fff;
   padding-right: 10px;
 }
 
@@ -65,7 +65,7 @@ h3.docs-page-title {
   border-radius: 2px;
 
   &.bg-white {
-    box-shadow: 0 0 1px $color-white-darker;
+    box-shadow: 0 0 1px #ebebeb;
   }
 }
 

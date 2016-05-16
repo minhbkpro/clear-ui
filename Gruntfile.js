@@ -23,7 +23,7 @@ module.exports = function(grunt) {
           style: 'expanded'
         },
         files: {
-          'docs/_site/dist/clear-ui.css' : 'sass/clear-ui.scss'
+          'docs/dist/clear-ui.css' : 'sass/clear-ui.scss'
         }
       }
     },
@@ -52,7 +52,7 @@ module.exports = function(grunt) {
         src: [
           'js/*.js'
         ],
-        dest: 'docs/_site/dist/clear-ui.js'
+        dest: 'docs/dist/clear-ui.js'
       }
     },
     uglify: {
@@ -68,7 +68,7 @@ module.exports = function(grunt) {
         tasks: ['sass:docs']
       },
       csslint: {
-        files: 'docs/_site/dist/clear-ui.css',
+        files: 'docs/dist/clear-ui.css',
         tasks: ['csslint:all']
       },
       jshint: {
@@ -88,5 +88,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.registerTask('default', ['watch']);
+  grunt.registerTask('docs', ['sass:docs', 'concat:docs']);
   grunt.registerTask('dist', ['sass:dist_expanded', 'sass:dist_compressed', 'concat:dist', 'uglify:dist']);
 };
