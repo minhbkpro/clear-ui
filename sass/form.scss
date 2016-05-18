@@ -172,6 +172,8 @@ input[type=radio] {
 
       li {
         a {
+          cursor: pointer;
+
           &:hover {
             background-color: #66afe9;
             color: $color-white;
@@ -212,12 +214,12 @@ input[type=radio] {
   &.open {
     .dropdown-toggle {
       border-color: #66afe9;
-      -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
-      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
-      box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075),0 0 8px rgba(102, 175, 233, .6);
+      -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 -1px 8px rgba(102, 175, 233, .6);
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 -1px 8px rgba(102, 175, 233, .6);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075),0 -1px 8px rgba(102, 175, 233, .6);
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
-      border-bottom: none;
+      border-bottom-color: rgba(102, 175, 233, 0.2);
 
       &:focus {
         outline: 0;
