@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/minhbkpro/clear-ui#readme",
   "devDependencies": {
+    "bootstrap-v4-dev": "^4.0.0-alpha.5",
     "browser-sync": "^2.18.8",
     "gulp": "^3.9.1",
     "gulp-rename": "^1.2.2",

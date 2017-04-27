@@ -1,13 +1,17 @@
 // core variables
 @import 'variables';
+@import 'bootstrap-custom';
 
 // core
 @import 'core';
 
 // components
-@import 'buttons';
-@import 'form';
-@import 'panel';
+// @import 'buttons';
+// @import 'form';
+// @import 'panel';
 
 // utility
 @import 'utilities';
+
+// bootstrap
+@import '../node_modules/bootstrap-v4-dev/scss/bootstrap.scss';
