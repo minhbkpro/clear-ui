@@ -7,16 +7,26 @@ $brand-danger: $color-red;
 
 // Typography
 $font-size-base: .875rem;
-$font-size-lg: 1.125rem;
+$font-size-xl: 1.25rem;
+$font-size-lg: 1rem;
 $font-size-sm: .75rem;
 $font-size-xs: .625rem;
 
 // Buttons
-$btn-padding-x: 1rem;
-$btn-padding-y: .5rem;
+$btn-padding-y: .5625rem;
+$btn-padding-x: $btn-padding-y * 1.2;
+$btn-line-height: 1;
 
-$btn-padding-x-sm: .5rem;
-$btn-padding-y-sm: .25rem;
+$btn-padding-y-xl: .75rem;
+$btn-padding-x-xl: $btn-padding-y-xl * 1.2;
 
-$btn-padding-x-lg: 1rem;
-$btn-padding-y-lg: .5rem;
+$btn-padding-y-lg: .6875rem;
+$btn-padding-x-lg: $btn-padding-y-lg * 1.2;
+
+$btn-padding-y-sm: .4375rem;
+$btn-padding-x-sm: $btn-padding-y-sm * 1.2;
+
+$btn-padding-y-xs: .4375rem;
+$btn-padding-x-xs: $btn-padding-y-sm * 1.2;
+
+$btn-primary-border: transparent;
