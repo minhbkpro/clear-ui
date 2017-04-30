@@ -1,171 +1,175 @@
-// mixin
-// @mixin btn-no-border {
-//   border: none;
-//   padding: 7px 13px;
+// remove outline and add inner shadow on click
+.btn {
+  &.active,
+  &:active,
+  &.focus,
+  &:focus {
+    outline: none !important;
+  }
 
-//   &.btn-xs {
-//     padding: 2px 6px;
-//   }
+  &:not(.disabled):not([disabled]) {
+    &.active,
+    &:active,
+    &.focus,
+    &:focus {
+      -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .08);
+      -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .08);
+      box-shadow: inset 0 3px 5px rgba(0, 0, 0, .08);
+    }
+  }
 
-//   &.btn-sm {
-//     padding: 6px 11px;
-//   }
+    &:not(.btn-default) {
+      border: none !important;
+    }
+}
 
-//   &.btn-lg {
-//     padding: 11px 17px;
-//   }
-// }
-// // end mixin
+// reset background color on events
+@each $name, $colors in $colors-map {
+  .btn-#{$name} {
+    background-color: nth($colors, 3);
+    color: $color-white !important;
 
-// .btn {
-//   border-radius: 2px;
+    &.active,
+    &:active,
+    &.focus,
+    &:focus,
+    &:hover {
+      background-color: nth($colors, 4);
+    }
 
-//   &:focus {
-//     outline: none !important;
-//   }
+    &.active,
+    &:active,
+    &.focus,
+    &:focus {
+      &:hover {
+        background-color: nth($colors, 5);
+      }
+    }
 
-//   &:not(.disabled):not([disabled]) {
-//     &.active,
-//     &:active,
-//     &.focus,
-//     &:focus {
-//       -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .08);
-//       -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .08);
-//       box-shadow: inset 0 3px 5px rgba(0, 0, 0, .08);
-//     }
-//   }
+    &.disabled,
+    &[disabled] {
+      background-color: nth($colors, 2) !important;
+    }
+  }
+}
 
-//   &:not(.btn-default) {
-//     border-color: transparent !important;
-//     @include btn-no-border;
-//   }
-// }
+// add shadow button type
+.btn-shadow {
+  @extend .box-shadow;
+  background-color: $color-white;
+  color: $color-black-lighter;
 
-// @each $name, $colors in $colors-map {
-//   .btn-#{$name} {
-//     background-color: nth($colors, 3);
-//     color: $color-white !important;
+  &.active,
+  &:active,
+  &.focus,
+  &:focus,
+  &:hover {
+    background-color: $color-white-dark;
+  }
 
-//     &.active,
-//     &:active,
-//     &.focus,
-//     &:focus,
-//     &:hover {
-//       background-color: nth($colors, 4);
-//     }
+  &.active,
+  &:active,
+  &.focus,
+  &:focus {
+    text-shadow: 0 2px 3px $color-white;
 
-//     &.active,
-//     &:active,
-//     &.focus,
-//     &:focus {
-//       &:hover {
-//         background-color: nth($colors, 5);
-//       }
-//     }
+    &:hover {
+      background-color: $color-white-darker;
+    }
+  }
 
-//     &.disabled,
-//     &[disabled] {
-//       background-color: nth($colors, 2) !important;
-//     }
-//   }
-// }
+  &.disabled,
+  &[disabled] {
+    background-color: $color-white-dark !important;
+  }
+}
 
-// .btn-shadow {
-//   @extend .box-shadow;
-//   background-color: $color-white;
+// labeled buttons
+.btn-default {
+  background-color: $color-white;
+  border-color: #dadada !important;
+  color: $color-black-lighter;
 
-//   &.active,
-//   &:active,
-//   &.focus,
-//   &:focus,
-//   &:hover {
-//     background-color: $color-white-dark;
-//   }
+  &.active,
+  &:active,
+  &.focus,
+  &:focus,
+  &:hover {
+    background-color: $color-white-dark;
+  }
 
-//   &.active,
-//   &:active,
-//   &.focus,
-//   &:focus {
-//     text-shadow: 0 2px 3px $color-white;
+  &.active,
+  &:active,
+  &.focus,
+  &:focus {
+    border: 0;
+    padding: ($btn-padding-y + 1 / $font-size-root-value) ($btn-padding-x + 1 / $font-size-root-value);
 
-//     &:hover {
-//       background-color: $color-white-darker;
-//     }
-//   }
+    &.btn-xl {
+      padding: ($btn-padding-y-xl + 1 / $font-size-root-value) ($btn-padding-x-xl + 1 / $font-size-root-value);
+    }
 
-//   &.disabled,
-//   &[disabled] {
-//     background-color: $color-white-dark !important;
-//   }
-// }
+    &.btn-lg {
+      padding: ($btn-padding-y-lg + 1 / $font-size-root-value) ($btn-padding-x-lg + 1 / $font-size-root-value);
+    }
 
-// // labeled buttons
-// .btn-default {
-//   border-color: #dadada !important;
+    &.btn-sm {
+      padding: ($btn-padding-y-sm + 1 / $font-size-root-value) ($btn-padding-x-sm + 1 / $font-size-root-value);
+    }
 
-//   &.active,
-//   &:active,
-//   &.focus,
-//   &:focus,
-//   &:hover {
-//     background-color: $color-white-dark;
-//   }
+    &.btn-xs {
+      padding: ($btn-padding-y-xs + 1 / $font-size-root-value) ($btn-padding-x-xs + 1 / $font-size-root-value);
+    }
 
-//   &.active,
-//   &:active,
-//   &.focus,
-//   &:focus {
-//     @include btn-no-border;
+    &:hover {
+      background-color: $color-white-darker;
+    }
+  }
+}
 
-//     &:hover {
-//       background-color: $color-white-darker;
-//     }
-//   }
-// }
+.btn-primary {
+  @extend .btn-blue;
+}
 
-// .btn-primary {
-//   @extend .btn-blue;
-// }
+.btn-success {
+  @extend .btn-green;
+}
 
-// .btn-success {
-//   @extend .btn-green;
-// }
+.btn-info {
+  @extend .btn-cyan;
+}
 
-// .btn-info {
-//   @extend .btn-cyan;
-// }
+.btn-warning {
+  @extend .btn-yellow;
+}
 
-// .btn-warning {
-//   @extend .btn-yellow;
-// }
+.btn-danger {
+  @extend .btn-red;
+}
 
-// .btn-danger {
-//   @extend .btn-red;
-// }
+// button icon
+.btn-icon {
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  padding: 0 !important;
+  text-align: center;
 
-// // button icon
-// .btn-icon {
-//   border-radius: 50%;
-//   width: 34px;
-//   height: 34px;
-//   padding: 0 !important;
-//   text-align: center;
+  &.btn-xs {
+    width: 22px;
+    height: 22px;
+  }
 
-//   &.btn-xs {
-//     width: 22px;
-//     height: 22px;
-//   }
+  &.btn-sm {
+    width: 30px;
+    height: 30px;
+  }
 
-//   &.btn-sm {
-//     width: 30px;
-//     height: 30px;
-//   }
-
-//   &.btn-lg {
-//     width: 46px;
-//     height: 46px;
-//   }
-// }
+  &.btn-lg {
+    width: 46px;
+    height: 46px;
+  }
+}
 
 // Button sizes
 .btn-xl {

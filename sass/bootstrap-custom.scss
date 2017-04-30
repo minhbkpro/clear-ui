@@ -5,10 +5,13 @@ $brand-info:            $color-cyan;
 $brand-warning:         $color-yellow;
 $brand-danger:          $color-red;
 
+// Body
+$body-color: $color-black-lighter;
+
 // Components
 $border-radius:         2px;
-$border-radius-xl:      2px;
-$border-radius-lg:      2px;
+$border-radius-xl:      4px;
+$border-radius-lg:      3px;
 $border-radius-sm:      2px;
 $border-radius-xs:      2px;
 
@@ -22,23 +25,21 @@ $font-size-sm:          12 / $font-size-root-value * 1rem;
 $font-size-xs:          10 / $font-size-root-value * 1rem;
 
 // Buttons
-$btn-padding-y:         9 / $font-size-root-value * 1rem;
+$btn-padding-y:         10 / $font-size-root-value * 1rem;
 $btn-padding-x:         $btn-padding-y * 1.2;
 $btn-line-height:       1;
 
-$btn-padding-y-xl:      12 / $font-size-root-value * 1rem;
+$btn-padding-y-xl:      13 / $font-size-root-value * 1rem;
 $btn-padding-x-xl:      $btn-padding-y-xl * 1.2;
 
-$btn-padding-y-lg:      11 / $font-size-root-value * 1rem;
+$btn-padding-y-lg:      12 / $font-size-root-value * 1rem;
 $btn-padding-x-lg:      $btn-padding-y-lg * 1.2;
 
-$btn-padding-y-sm:      7 / $font-size-root-value * 1rem;
+$btn-padding-y-sm:      8 / $font-size-root-value * 1rem;
 $btn-padding-x-sm:      $btn-padding-y-sm * 1.2;
 
-$btn-padding-y-xs:      5 / $font-size-root-value * 1rem;
+$btn-padding-y-xs:      6 / $font-size-root-value * 1rem;
 $btn-padding-x-xs:      $btn-padding-y-sm * 1.2;
-
-$btn-primary-border:    transparent;
 
 $btn-border-radius:     $border-radius;
 $btn-border-radius-xl:  $border-radius-xl;
