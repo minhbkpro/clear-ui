@@ -6,15 +6,15 @@
 @import 'bootstrap-custom';
 
 // core
-// @import 'core';
+@import 'core';
+
+// bootstrap
+@import '../node_modules/bootstrap-v4-dev/scss/bootstrap.scss';
 
 // components
-// @import 'buttons';
+@import 'buttons';
 // @import 'form';
 // @import 'panel';
 
 // utility
 // @import 'utilities';
-
-// bootstrap
-@import '../node_modules/bootstrap-v4-dev/scss/bootstrap.scss';

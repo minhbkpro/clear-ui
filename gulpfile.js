@@ -27,7 +27,7 @@ gulp.task('jekyll', shell.task(['cd docs;jekyll build --watch']));
 gulp.task('browserSync', function () {
   browserSync.init({
     server: {baseDir: 'docs/_site'},
-    reloadDebounce: 1000
+    reloadDebounce: 500
   });
 
   // Reloads page when some of the already built files changed:
