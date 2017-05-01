@@ -1,5 +1,7 @@
-// remove outline and add inner shadow on click
+// default attributes
 .btn {
+  cursor: pointer;
+
   &.active,
   &:active,
   &.focus,
