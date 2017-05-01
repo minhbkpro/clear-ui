@@ -14,18 +14,18 @@
           <div class="row row-plain margin-bottom-10">
             <div class="col-sm-4 content-right content-middle">Default</div>
             <div class="col-sm-8">
-              <button type="button" class="btn btn-sm btn-default">Normal</button>
-              <button type="button" class="btn btn-sm btn-default active">Actived</button>
-              <button type="button" class="btn btn-sm btn-default disabled">Disabled</button>
+              <button type="button" class="btn btn-default">Normal</button>
+              <button type="button" class="btn btn-default active">Actived</button>
+              <button type="button" class="btn btn-default disabled">Disabled</button>
             </div>
           </div>
       {% endif %}
       <div class="row row-plain margin-bottom-10">
         <div class="col-sm-4 content-right content-middle text-capitalize">{{ color.name }}</div>
         <div class="col-sm-8">
-          <button type="button" class="btn btn-sm btn-{{ color.name }}">Normal</button>
-          <button type="button" class="btn btn-sm btn-{{ color.name }} active">Actived</button>
-          <button type="button" class="btn btn-sm btn-{{ color.name }} disabled">Disabled</button>
+          <button type="button" class="btn btn-{{ color.name }}">Normal</button>
+          <button type="button" class="btn btn-{{ color.name }} active">Actived</button>
+          <button type="button" class="btn btn-{{ color.name }} disabled">Disabled</button>
         </div>
       </div>
       {% if forloop.index == colors_middle %}
@@ -43,6 +43,7 @@
   <div class="row">
     <div class="col-sm-10 offset-sm-2">
       <button type="button" class="btn btn-default">Default</button>
+      <button type="button" class="btn btn-secondary">Secondary</button>
       <button type="button" class="btn btn-primary">Primary</button>
       <button type="button" class="btn btn-success">Success</button>
       <button type="button" class="btn btn-info">Info</button>

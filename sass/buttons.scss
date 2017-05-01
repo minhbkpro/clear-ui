@@ -18,7 +18,7 @@
     }
   }
 
-    &:not(.btn-default) {
+    &:not(.btn-default):not(.btn-secondary) {
       border: none !important;
     }
 }
@@ -85,10 +85,29 @@
 }
 
 // labeled buttons
-.btn-default {
+.btn-default,
+.btn-secondary {
   background-color: $color-white;
   border-color: #dadada !important;
   color: $color-black-lighter;
+
+  padding: ($btn-padding-y - 1 / $font-size-root-value) ($btn-padding-x - 1 / $font-size-root-value);
+
+  &.btn-xl {
+    padding: ($btn-padding-y-xl - 1 / $font-size-root-value) ($btn-padding-x-xl - 1 / $font-size-root-value);
+  }
+
+  &.btn-lg {
+    padding: ($btn-padding-y-lg - 1 / $font-size-root-value) ($btn-padding-x-lg - 1 / $font-size-root-value);
+  }
+
+  &.btn-sm {
+    padding: ($btn-padding-y-sm - 1 / $font-size-root-value) ($btn-padding-x-sm - 1 / $font-size-root-value);
+  }
+
+  &.btn-xs {
+    padding: ($btn-padding-y-xs - 1 / $font-size-root-value) ($btn-padding-x-xs - 1 / $font-size-root-value);
+  }
 
   &.active,
   &:active,
@@ -103,22 +122,22 @@
   &.focus,
   &:focus {
     border: 0;
-    padding: ($btn-padding-y + 1 / $font-size-root-value) ($btn-padding-x + 1 / $font-size-root-value);
+    padding: $btn-padding-y $btn-padding-x;
 
     &.btn-xl {
-      padding: ($btn-padding-y-xl + 1 / $font-size-root-value) ($btn-padding-x-xl + 1 / $font-size-root-value);
+      padding: $btn-padding-y-xl $btn-padding-x-xl;
     }
 
     &.btn-lg {
-      padding: ($btn-padding-y-lg + 1 / $font-size-root-value) ($btn-padding-x-lg + 1 / $font-size-root-value);
+      padding: $btn-padding-y-lg $btn-padding-x-lg;
     }
 
     &.btn-sm {
-      padding: ($btn-padding-y-sm + 1 / $font-size-root-value) ($btn-padding-x-sm + 1 / $font-size-root-value);
+      padding: $btn-padding-y-sm $btn-padding-x-sm;
     }
 
     &.btn-xs {
-      padding: ($btn-padding-y-xs + 1 / $font-size-root-value) ($btn-padding-x-xs + 1 / $font-size-root-value);
+      padding: $btn-padding-y-xs $btn-padding-x-xs;
     }
 
     &:hover {
