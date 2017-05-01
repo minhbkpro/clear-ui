@@ -1,4 +1,51 @@
-// background
+// text colors
+@each $name, $colors in $colors-map {
+  .color-#{$name}-lighter {
+    color: nth($colors, 1);
+  }
+
+  .color-#{$name}-light {
+    color: nth($colors, 2);
+  }
+
+  .color-#{$name} {
+    color: nth($colors, 3);
+  }
+
+  .color-#{$name}-dark {
+    color: nth($colors, 4);
+  }
+
+  .color-#{$name}-darker {
+    color: nth($colors, 5);
+  }
+}
+
+.color-white {
+  color: $color-white;
+}
+
+.color-white-dark {
+  color: $color-white-dark;
+}
+
+.color-white-darker {
+  color: $color-white-darker;
+}
+
+.color-black-lighter {
+  color: $color-black-lighter;
+}
+
+.color-black-light {
+  color: $color-black-light;
+}
+
+.color-black {
+  color: $color-black;
+}
+
+// backgrounds
 @each $name, $colors in $colors-map {
   .bg-#{$name}-lighter {
     background-color: nth($colors, 1);
