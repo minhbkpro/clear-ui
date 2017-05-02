@@ -1,6 +1,23 @@
+// line-height map
+$btn-line-height-map: (
+  'xl': $btn-line-height-xl,
+  'lg': $btn-line-height-lg,
+  'sm': $btn-line-height-sm,
+  'xs': $btn-line-height-xs
+);
+
+// padding map
+$btn-padding-map: (
+  'xl': $btn-padding-y-xl $btn-padding-x-xl,
+  'lg': $btn-padding-y-lg $btn-padding-x-lg,
+  'sm': $btn-padding-y-sm $btn-padding-x-sm,
+  'xs': $btn-padding-y-xs $btn-padding-x-xs
+);
+
 // default attributes
 .btn {
   cursor: pointer;
+  line-height: $btn-line-height;
 
   &.active,
   &:active,
@@ -20,13 +37,19 @@
     }
   }
 
-    &:not(.btn-default):not(.btn-secondary) {
-      border: none !important;
+  &:not(.btn-default):not(.btn-secondary) {
+    border: none !important;
+  }
+
+  @each $tier in $tiers {
+    &.btn-#{$tier} {
+      line-height: map-get($btn-line-height-map, $tier);
     }
+  }
 }
 
 // reset background color on events
-@each $name, $colors in $colors-map {
+@each $name, $colors in $color-map {
   .btn-#{$name} {
     background-color: nth($colors, 3);
     color: $color-white !important;
@@ -92,24 +115,8 @@
   background-color: $color-white;
   border-color: #dadada !important;
   color: $color-black-lighter;
-
-  padding: ($btn-padding-y - 1 / $font-size-root-value) ($btn-padding-x - 1 / $font-size-root-value);
-
-  &.btn-xl {
-    padding: ($btn-padding-y-xl - 1 / $font-size-root-value) ($btn-padding-x-xl - 1 / $font-size-root-value);
-  }
-
-  &.btn-lg {
-    padding: ($btn-padding-y-lg - 1 / $font-size-root-value) ($btn-padding-x-lg - 1 / $font-size-root-value);
-  }
-
-  &.btn-sm {
-    padding: ($btn-padding-y-sm - 1 / $font-size-root-value) ($btn-padding-x-sm - 1 / $font-size-root-value);
-  }
-
-  &.btn-xs {
-    padding: ($btn-padding-y-xs - 1 / $font-size-root-value) ($btn-padding-x-xs - 1 / $font-size-root-value);
-  }
+  padding: 0 ($btn-padding-x - 1 / $font-size-root-value);
+  line-height: $btn-line-height - 2 / $font-size-root-value;
 
   &.active,
   &:active,
@@ -126,24 +133,22 @@
     border: 0;
     padding: $btn-padding-y $btn-padding-x;
 
-    &.btn-xl {
-      padding: $btn-padding-y-xl $btn-padding-x-xl;
-    }
-
-    &.btn-lg {
-      padding: $btn-padding-y-lg $btn-padding-x-lg;
-    }
-
-    &.btn-sm {
-      padding: $btn-padding-y-sm $btn-padding-x-sm;
-    }
-
-    &.btn-xs {
-      padding: $btn-padding-y-xs $btn-padding-x-xs;
-    }
-
     &:hover {
       background-color: $color-white-darker;
+    }
+
+    @each $tier in $tiers {
+      &.btn-#{$tier} {
+        padding: map-get($btn-padding-map, $tier);
+      }
+    }
+  }
+
+  @each $tier in $tiers {
+    $paddings: map-get($btn-padding-map, $tier);
+    &.btn-#{$tier} {
+      padding: nth($paddings, 1) (nth($paddings, 2) - 1 / $font-size-root-value);
+      line-height: map-get($btn-line-height-map, $tier) - 2 / $font-size-root-value;
     }
   }
 }

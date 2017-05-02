@@ -92,19 +92,22 @@ $color-info: $color-cyan;
 $color-warning: $color-yellow;
 $color-danger: $color-red;
 
-// color lists
-$colors-map: (
-  "gray": ($color-gray-lighter, $color-gray-light, $color-gray, $color-gray-dark, $color-gray-darker),
-  "blue-gray": ($color-blue-gray-lighter, $color-blue-gray-light, $color-blue-gray, $color-blue-gray-dark, $color-blue-gray-darker),
-  "blue": ($color-blue-lighter, $color-blue-light, $color-blue, $color-blue-dark, $color-blue-darker),
-  "teal": ($color-teal-lighter, $color-teal-light, $color-teal, $color-teal-dark, $color-teal-darker),
-  "green": ($color-green-lighter, $color-green-light, $color-green, $color-green-dark, $color-green-darker),
-  "cyan": ($color-cyan-lighter, $color-cyan-light, $color-cyan, $color-cyan-dark, $color-cyan-darker),
-  "lime": ($color-lime-lighter, $color-lime-light, $color-lime, $color-lime-dark, $color-lime-darker),
-  "yellow": ($color-yellow-lighter, $color-yellow-light, $color-yellow, $color-yellow-dark, $color-yellow-darker),
-  "orange": ($color-orange-lighter, $color-orange-light, $color-orange, $color-orange-dark, $color-orange-darker),
-  "pink": ($color-pink-lighter, $color-pink-light, $color-pink, $color-pink-dark, $color-pink-darker),
-  "red": ($color-red-lighter, $color-red-light, $color-red, $color-red-dark, $color-red-darker),
-  "brown": ($color-brown-lighter, $color-brown-light, $color-brown, $color-brown-dark, $color-brown-darker),
-  "purple": ($color-purple-lighter, $color-purple-light, $color-purple, $color-purple-dark, $color-purple-darker)
-)
+// color map
+$color-map: (
+  'gray': ($color-gray-lighter, $color-gray-light, $color-gray, $color-gray-dark, $color-gray-darker),
+  'blue-gray': ($color-blue-gray-lighter, $color-blue-gray-light, $color-blue-gray, $color-blue-gray-dark, $color-blue-gray-darker),
+  'blue': ($color-blue-lighter, $color-blue-light, $color-blue, $color-blue-dark, $color-blue-darker),
+  'teal': ($color-teal-lighter, $color-teal-light, $color-teal, $color-teal-dark, $color-teal-darker),
+  'green': ($color-green-lighter, $color-green-light, $color-green, $color-green-dark, $color-green-darker),
+  'cyan': ($color-cyan-lighter, $color-cyan-light, $color-cyan, $color-cyan-dark, $color-cyan-darker),
+  'lime': ($color-lime-lighter, $color-lime-light, $color-lime, $color-lime-dark, $color-lime-darker),
+  'yellow': ($color-yellow-lighter, $color-yellow-light, $color-yellow, $color-yellow-dark, $color-yellow-darker),
+  'orange': ($color-orange-lighter, $color-orange-light, $color-orange, $color-orange-dark, $color-orange-darker),
+  'pink': ($color-pink-lighter, $color-pink-light, $color-pink, $color-pink-dark, $color-pink-darker),
+  'red': ($color-red-lighter, $color-red-light, $color-red, $color-red-dark, $color-red-darker),
+  'brown': ($color-brown-lighter, $color-brown-light, $color-brown, $color-brown-dark, $color-brown-darker),
+  'purple': ($color-purple-lighter, $color-purple-light, $color-purple, $color-purple-dark, $color-purple-darker)
+);
+
+// tier list
+$tiers: ('xl', 'lg', 'sm', 'xs');

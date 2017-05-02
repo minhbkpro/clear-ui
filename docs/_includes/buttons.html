@@ -93,7 +93,7 @@
   <div class="row margin-bottom-20 docs-button-icons">
     <div class="col-sm-10 offset-sm-2">
       {% for icon in site.data.icons %}
-        <button type="button" class="btn btn-sm btn-link">
+        <button type="button" class="btn btn-link">
           <i class="fa fa-fw {{ icon.name }}"></i>
         </button>
       {% endfor %}
@@ -102,26 +102,7 @@
   <div class="row margin-bottom-20 docs-button-icons">
     <div class="col-sm-10 offset-sm-2">
       {% for icon in site.data.icons %}
-        <button type="button" class="btn btn-sm btn-default">
-          <i class="fa fa-fw {{ icon.name }}"></i>
-        </button>
-      {% endfor %}
-    </div>
-  </div>
-  <div class="row margin-bottom-20 docs-button-icons">
-    <div class="col-sm-10 offset-sm-2">
-      {% for icon in site.data.icons %}
-        {% assign index = forloop.index | minus: 1 %}
-        <button type="button" class="btn btn-sm btn-{{ site.data.colors[index].name }}">
-          <i class="fa fa-fw {{ icon.name }}"></i>
-        </button>
-      {% endfor %}
-    </div>
-  </div>
-  <div class="row margin-bottom-20 docs-button-icons">
-    <div class="col-sm-10 offset-sm-2">
-      {% for icon in site.data.icons %}
-        <button type="button" class="btn btn-sm btn-shadow">
+        <button type="button" class="btn btn-default">
           <i class="fa fa-fw {{ icon.name }}"></i>
         </button>
       {% endfor %}
@@ -131,7 +112,7 @@
     <div class="col-sm-10 offset-sm-2">
       {% for icon in site.data.icons %}
         {% assign index = forloop.index | minus: 1 %}
-        <button type="button" class="btn btn-sm box-shadow btn-{{ site.data.colors[index].name }}">
+        <button type="button" class="btn btn-{{ site.data.colors[index].name }}">
           <i class="fa fa-fw {{ icon.name }}"></i>
         </button>
       {% endfor %}
@@ -140,26 +121,7 @@
   <div class="row margin-bottom-20 docs-button-icons">
     <div class="col-sm-10 offset-sm-2">
       {% for icon in site.data.icons %}
-        <button type="button" class="btn btn-sm btn-default btn-icon">
-          <i class="fa fa-fw {{ icon.name }}"></i>
-        </button>
-      {% endfor %}
-    </div>
-  </div>
-  <div class="row margin-bottom-20 docs-button-icons">
-    <div class="col-sm-10 offset-sm-2">
-      {% for icon in site.data.icons %}
-        {% assign index = forloop.index | minus: 1 %}
-        <button type="button" class="btn btn-sm btn-icon btn-{{ site.data.colors[index].name }}">
-          <i class="fa fa-fw {{ icon.name }}"></i>
-        </button>
-      {% endfor %}
-    </div>
-  </div>
-  <div class="row margin-bottom-20 docs-button-icons">
-    <div class="col-sm-10 offset-sm-2">
-      {% for icon in site.data.icons %}
-        <button type="button" class="btn btn-sm btn-icon btn-shadow">
+        <button type="button" class="btn btn-shadow">
           <i class="fa fa-fw {{ icon.name }}"></i>
         </button>
       {% endfor %}
@@ -169,7 +131,45 @@
     <div class="col-sm-10 offset-sm-2">
       {% for icon in site.data.icons %}
         {% assign index = forloop.index | minus: 1 %}
-        <button type="button" class="btn btn-sm btn-icon box-shadow btn-{{ site.data.colors[index].name }}">
+        <button type="button" class="btn box-shadow btn-{{ site.data.colors[index].name }}">
+          <i class="fa fa-fw {{ icon.name }}"></i>
+        </button>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="row margin-bottom-20 docs-button-icons">
+    <div class="col-sm-10 offset-sm-2">
+      {% for icon in site.data.icons %}
+        <button type="button" class="btn btn-default btn-icon">
+          <i class="fa fa-fw {{ icon.name }}"></i>
+        </button>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="row margin-bottom-20 docs-button-icons">
+    <div class="col-sm-10 offset-sm-2">
+      {% for icon in site.data.icons %}
+        {% assign index = forloop.index | minus: 1 %}
+        <button type="button" class="btn btn-icon btn-{{ site.data.colors[index].name }}">
+          <i class="fa fa-fw {{ icon.name }}"></i>
+        </button>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="row margin-bottom-20 docs-button-icons">
+    <div class="col-sm-10 offset-sm-2">
+      {% for icon in site.data.icons %}
+        <button type="button" class="btn btn-icon btn-shadow">
+          <i class="fa fa-fw {{ icon.name }}"></i>
+        </button>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="row margin-bottom-20 docs-button-icons">
+    <div class="col-sm-10 offset-sm-2">
+      {% for icon in site.data.icons %}
+        {% assign index = forloop.index | minus: 1 %}
+        <button type="button" class="btn btn-icon box-shadow btn-{{ site.data.colors[index].name }}">
           <i class="fa fa-fw {{ icon.name }}"></i>
         </button>
       {% endfor %}

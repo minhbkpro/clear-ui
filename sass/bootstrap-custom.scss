@@ -25,21 +25,25 @@ $font-size-sm:          12 / $font-size-root-value * 1rem;
 $font-size-xs:          10 / $font-size-root-value * 1rem;
 
 // Buttons
-$btn-padding-y:         10 / $font-size-root-value * 1rem;
-$btn-padding-x:         $btn-padding-y * 1.2;
-$btn-line-height:       1;
+$btn-padding-y:         0rem;
+$btn-padding-x:         10 / $font-size-root-value * 1.2rem;
+$btn-line-height:       34 / $font-size-root-value * 1rem;
 
-$btn-padding-y-xl:      13 / $font-size-root-value * 1rem;
-$btn-padding-x-xl:      $btn-padding-y-xl * 1.2;
+$btn-padding-y-xl:      0rem;
+$btn-padding-x-xl:      13 / $font-size-root-value * 1.2rem;
+$btn-line-height-xl:    46 / $font-size-root-value * 1rem;
 
-$btn-padding-y-lg:      12 / $font-size-root-value * 1rem;
-$btn-padding-x-lg:      $btn-padding-y-lg * 1.2;
+$btn-padding-y-lg:      0rem;
+$btn-padding-x-lg:      12 / $font-size-root-value * 1.2rem;
+$btn-line-height-lg:    40 / $font-size-root-value * 1rem;
 
-$btn-padding-y-sm:      8 / $font-size-root-value * 1rem;
-$btn-padding-x-sm:      $btn-padding-y-sm * 1.2;
+$btn-padding-y-sm:      0rem;
+$btn-padding-x-sm:      8 / $font-size-root-value * 1.2rem;
+$btn-line-height-sm:    28 / $font-size-root-value * 1rem;
 
-$btn-padding-y-xs:      6 / $font-size-root-value * 1rem;
-$btn-padding-x-xs:      $btn-padding-y-sm * 1.2;
+$btn-padding-y-xs:      0rem;
+$btn-padding-x-xs:      6 / $font-size-root-value * 1.2rem;
+$btn-line-height-xs:    22 / $font-size-root-value * 1rem;
 
 $btn-border-radius:     $border-radius;
 $btn-border-radius-xl:  $border-radius-xl;

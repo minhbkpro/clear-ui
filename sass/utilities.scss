@@ -1,5 +1,5 @@
 // text colors
-@each $name, $colors in $colors-map {
+@each $name, $colors in $color-map {
   .color-#{$name}-lighter {
     color: nth($colors, 1);
   }
@@ -46,7 +46,7 @@
 }
 
 // backgrounds
-@each $name, $colors in $colors-map {
+@each $name, $colors in $color-map {
   .bg-#{$name}-lighter {
     background-color: nth($colors, 1);
   }
