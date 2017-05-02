@@ -132,6 +132,7 @@ $btn-padding-map: (
   &:focus {
     border: 0;
     padding: $btn-padding-y $btn-padding-x;
+    line-height: $btn-line-height;
 
     &:hover {
       background-color: $color-white-darker;
@@ -140,6 +141,7 @@ $btn-padding-map: (
     @each $tier in $tiers {
       &.btn-#{$tier} {
         padding: map-get($btn-padding-map, $tier);
+        line-height: map-get($btn-line-height-map, $tier);
       }
     }
   }
@@ -173,27 +175,32 @@ $btn-padding-map: (
   @extend .btn-red;
 }
 
-// button icon
-.btn-icon {
-  border-radius: 50%;
-  width: 34px;
-  height: 34px;
+// button circle
+.btn-circle {
+  border-radius: 50% !important;
+  width: $btn-line-height;
+  height: $btn-line-height;
   padding: 0 !important;
   text-align: center;
 
-  &.btn-xs {
-    width: 22px;
-    height: 22px;
-  }
-
-  &.btn-sm {
-    width: 30px;
-    height: 30px;
+  &.btn-xl {
+    width: $btn-line-height-xl;
+    height: $btn-line-height-xl;
   }
 
   &.btn-lg {
-    width: 46px;
-    height: 46px;
+    width: $btn-line-height-lg;
+    height: $btn-line-height-lg;
+  }
+
+  &.btn-sm {
+    width: $btn-line-height-sm;
+    height: $btn-line-height-sm;
+  }
+
+  &.btn-xs {
+    width: $btn-line-height-xs;
+    height: $btn-line-height-xs;
   }
 }
 
