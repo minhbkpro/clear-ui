@@ -204,6 +204,26 @@ $btn-padding-map: (
   }
 }
 
+.btn-fw {
+  margin: 0 $btn-fw-margin;
+
+  &.btn-xl {
+    margin: 0 $btn-fw-margin-xl;
+  }
+
+  &.btn-lg {
+    margin: 0 $btn-fw-margin-lg;
+  }
+
+  &.btn-sm {
+    margin: 0 $btn-fw-margin-sm;
+  }
+
+  &.btn-xs {
+    margin: 0 $btn-fw-margin-xs;
+  }
+}
+
 // Button sizes
 .btn-xl {
   @include button-size($btn-padding-y-xl, $btn-padding-x-xl, $font-size-xl, $btn-border-radius-xl);

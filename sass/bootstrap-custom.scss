@@ -52,3 +52,15 @@ $btn-border-radius-sm:  $border-radius-sm;
 $btn-border-radius-xs:  $border-radius-xs;
 
 $btn-transition: none;
+
+$btn-fw-icon-width: 18 / 14 * $font-size-base;
+$btn-fw-icon-width-xl: 18 / 14 * $font-size-xl;
+$btn-fw-icon-width-lg: 18 / 14 * $font-size-lg;
+$btn-fw-icon-width-sm: 18 / 14 * $font-size-sm;
+$btn-fw-icon-width-xs: 18 / 14 * $font-size-xs;
+
+$btn-fw-margin: ($btn-padding-x * 2 + $btn-fw-icon-width - $btn-line-height) / 2;
+$btn-fw-margin-xl: ($btn-padding-x-xl * 2 + $btn-fw-icon-width-xl - $btn-line-height-xl) / 2;
+$btn-fw-margin-lg: ($btn-padding-x-lg * 2 + $btn-fw-icon-width-lg - $btn-line-height-lg) / 2;
+$btn-fw-margin-sm: ($btn-padding-x-sm * 2 + $btn-fw-icon-width-sm - $btn-line-height-sm) / 2;
+$btn-fw-margin-xs: ($btn-padding-x-xs * 2 + $btn-fw-icon-width-xs - $btn-line-height-xs) / 2;

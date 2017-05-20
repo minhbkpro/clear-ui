@@ -89,37 +89,33 @@
   </h3>
   <div class="row margin-bottom-20 margin-top-40 docs-button-icons">
     <div class="col-sm-10 offset-sm-2">
-      <button type="button" class="btn btn-default">
-        <i class="fa fa-home"></i>
-        Home
-      </button>
       <button type="button" class="btn btn-primary">
-        <i class="fa fa-plus"></i>
+        <i class="fa fa-fw fa-plus"></i>
         Add
       </button>
       <button type="button" class="btn btn-info">
-        <i class="fa fa-info-circle"></i>
+        <i class="fa fa-fw fa-info-circle"></i>
         Show
       </button>
       <button type="button" class="btn btn-orange">
-        <i class="fa fa-pencil"></i>
+        <i class="fa fa-fw fa-pencil"></i>
         Edit
       </button>
       <button type="button" class="btn btn-danger">
-        <i class="fa fa-trash"></i>
+        <i class="fa fa-fw fa-trash"></i>
         Delete
       </button>
       <button type="button" class="btn btn-default">
-        <i class="fa fa-times"></i>
+        <i class="fa fa-fw fa-home"></i>
+        Home
+      </button>
+      <button type="button" class="btn btn-default">
+        <i class="fa fa-fw fa-times"></i>
         Close
       </button>
       <button type="button" class="btn btn-default">
-        <i class="fa fa-gear"></i>
+        <i class="fa fa-fw fa-gear"></i>
         Settings
-      </button>
-      <button type="button" class="btn btn-default">
-        <i class="fa fa-refresh"></i>
-        Reload
       </button>
     </div>
   </div>
@@ -209,6 +205,48 @@
       {% for icon in site.data.icons %}
         {% assign index = forloop.index | minus: 1 %}
         <button type="button" class="btn btn-circle box-shadow btn-{{ site.data.colors[index].name }}">
+          <i class="fa fa-fw {{ icon.name }}"></i>
+        </button>
+      {% endfor %}
+    </div>
+  </div>
+  <h3 id="circle-icons" class="docs-page-title">
+    <a href="#circle-icons" title="Circle Icons Fixed Width">Circle Icons Fixed Width</a>
+  </h3>
+  <p>Fit with "Only Icons" buttons</P>
+  <div class="row margin-bottom-20 margin-top-30 docs-button-icons">
+    <div class="col-sm-10 offset-sm-2">
+      {% for icon in site.data.icons %}
+        <button type="button" class="btn btn-default btn-circle btn-fw">
+          <i class="fa fa-fw {{ icon.name }}"></i>
+        </button>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="row margin-bottom-20 docs-button-icons">
+    <div class="col-sm-10 offset-sm-2">
+      {% for icon in site.data.icons %}
+        {% assign index = forloop.index | minus: 1 %}
+        <button type="button" class="btn btn-circle btn-fw btn-{{ site.data.colors[index].name }}">
+          <i class="fa fa-fw {{ icon.name }}"></i>
+        </button>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="row margin-bottom-20 docs-button-icons">
+    <div class="col-sm-10 offset-sm-2">
+      {% for icon in site.data.icons %}
+        <button type="button" class="btn btn-circle btn-fw btn-shadow">
+          <i class="fa fa-fw {{ icon.name }}"></i>
+        </button>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="row margin-bottom-20 docs-button-icons">
+    <div class="col-sm-10 offset-sm-2">
+      {% for icon in site.data.icons %}
+        {% assign index = forloop.index | minus: 1 %}
+        <button type="button" class="btn btn-circle btn-fw box-shadow btn-{{ site.data.colors[index].name }}">
           <i class="fa fa-fw {{ icon.name }}"></i>
         </button>
       {% endfor %}
