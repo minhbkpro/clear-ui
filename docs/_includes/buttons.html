@@ -217,7 +217,7 @@
   <div class="row margin-bottom-20 margin-top-30 docs-button-icons">
     <div class="col-sm-10 offset-sm-2">
       {% for icon in site.data.icons %}
-        <button type="button" class="btn btn-default btn-circle btn-fw">
+        <button type="button" class="btn btn-default btn-circle btn-circle-fw">
           <i class="fa fa-fw {{ icon.name }}"></i>
         </button>
       {% endfor %}
@@ -227,7 +227,7 @@
     <div class="col-sm-10 offset-sm-2">
       {% for icon in site.data.icons %}
         {% assign index = forloop.index | minus: 1 %}
-        <button type="button" class="btn btn-circle btn-fw btn-{{ site.data.colors[index].name }}">
+        <button type="button" class="btn btn-circle btn-circle-fw btn-{{ site.data.colors[index].name }}">
           <i class="fa fa-fw {{ icon.name }}"></i>
         </button>
       {% endfor %}
@@ -236,7 +236,7 @@
   <div class="row margin-bottom-20 docs-button-icons">
     <div class="col-sm-10 offset-sm-2">
       {% for icon in site.data.icons %}
-        <button type="button" class="btn btn-circle btn-fw btn-shadow">
+        <button type="button" class="btn btn-circle btn-circle-fw btn-shadow">
           <i class="fa fa-fw {{ icon.name }}"></i>
         </button>
       {% endfor %}
@@ -246,7 +246,7 @@
     <div class="col-sm-10 offset-sm-2">
       {% for icon in site.data.icons %}
         {% assign index = forloop.index | minus: 1 %}
-        <button type="button" class="btn btn-circle btn-fw box-shadow btn-{{ site.data.colors[index].name }}">
+        <button type="button" class="btn btn-circle btn-circle-fw box-shadow btn-{{ site.data.colors[index].name }}">
           <i class="fa fa-fw {{ icon.name }}"></i>
         </button>
       {% endfor %}
