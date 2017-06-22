@@ -1,7 +1,7 @@
 {
   "name": "clear-ui",
   "version": "1.0.0",
-  "description": "Free theme base on bootstrap 3",
+  "description": "Free theme base on bootstrap 4",
   "main": "index.js",
   "directories": {
     "doc": "docs"
@@ -19,9 +19,10 @@
     "url": "https://github.com/minhbkpro/clear-ui/issues"
   },
   "homepage": "https://github.com/minhbkpro/clear-ui#readme",
-  "devDependencies": {
+  "devDependencies": {},
+  "dependencies": {
     "bootstrap": "^4.0.0-alpha.6",
-    "browser-sync": "^2.18.8",
+    "browser-sync": "^2.18.12",
     "gulp": "^3.9.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
