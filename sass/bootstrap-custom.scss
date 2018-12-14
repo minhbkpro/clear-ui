@@ -1,9 +1,23 @@
+// Options
+$enable-shadows: true;
+
 // Colors
-$brand-primary:         $color-blue;
-$brand-success:         $color-green;
-$brand-info:            $color-cyan;
-$brand-warning:         $color-yellow;
-$brand-danger:          $color-red;
+$white:             $color-white;
+$black:             $color-black;
+$red:               $color-red;
+$orange:            $color-orange;
+$yellow:            $color-yellow;
+$green:             $color-green;
+$blue:              $color-blue;
+$teal:              $color-teal;
+$pink:              $color-pink;
+$purple:            $color-purple;
+
+$brand-primary:     $color-blue;
+$brand-success:     $color-green;
+$brand-info:        $color-cyan;
+$brand-warning:     $color-yellow;
+$brand-danger:      $color-red;
 
 // Body
 $body-color: $color-black-lighter;
