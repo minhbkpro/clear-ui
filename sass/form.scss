@@ -5,7 +5,11 @@
   border-radius: 2px;
 
   &:hover:not(:focus) {
-    border-top: 1px solid #aaa;
+    border-top: 1px solid #999;
+  }
+
+  &:focus {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 -1px 8px rgba(102, 175, 233, 0.6);
   }
 }
 
@@ -60,8 +64,6 @@ input[type=radio] {
       & + ins {
         border: none;
         background-color: $color-blue-lighter;
-        -moz-box-shadow: inset 0 4px 6px $color-blue;
-        -webkit-box-shadow: inset 0 4px 6px $color-blue;
         box-shadow: inset 0 4px 6px $color-blue;
 
         &:before {
@@ -76,8 +78,6 @@ input[type=radio] {
           margin-left: -2px;
           border-radius: 50%;
           background-color: $color-white;
-          -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-          -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
         }
       }
@@ -103,10 +103,6 @@ input[type=radio] {
         &:before {
           background-color: transparent;
           border-radius: 0;
-          -o-transform: rotate(-50deg);
-          -ms-transform: rotate(-50deg);
-          -moz-transform: rotate(-50deg);
-          -webkit-transform: rotate(-50deg);
           transform: rotate(-50deg);
           width: 10px;
           height: 5px;
@@ -117,8 +113,6 @@ input[type=radio] {
           top: 50%;
           margin-left: -5px;
           margin-top: -3px;
-          -moz-box-shadow: -1px 3px 4px rgba(0, 0, 0, 0.2);
-          -webkit-box-shadow: -1px 3px 4px rgba(0, 0, 0, 0.2);
           box-shadow: -1px 3px 4px rgba(0, 0, 0, 0.2);
         }
       }
@@ -165,8 +159,6 @@ input[type=radio] {
       border-color: #66afe9;
       border-top-color: rgba(#66afe9, .2);
       outline: 0;
-      -moz-box-shadow: 0 4px 6px rgba(102, 175, 233, .4);
-      -webkit-box-shadow: 0 4px 6px rgba(102, 175, 233, .4);
       box-shadow: 0 4px 6px rgba(102, 175, 233, .4);
       padding: 0;
 
@@ -214,8 +206,6 @@ input[type=radio] {
   &.open {
     .dropdown-toggle {
       border-color: #66afe9;
-      -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 -1px 8px rgba(102, 175, 233, .6);
-      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 -1px 8px rgba(102, 175, 233, .6);
       box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075),0 -1px 8px rgba(102, 175, 233, .6);
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;

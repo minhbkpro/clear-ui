@@ -1,8 +1,9 @@
-// add color code in color list
-$('.docs-color-list .docs-color-box').each(function() {
-  var $this = $(this);
-
-  $this.html('<span>' + rgb2hex($this.css('background-color')) + '</span>');
+$(function() {
+  // add color code in color list
+  $('.docs-color-list .docs-color-box').each(function() {
+    var $this = $(this);
+    $this.html('<span>' + rgb2hex($this.css('background-color')) + '</span>');
+  });
 });
 
 /**

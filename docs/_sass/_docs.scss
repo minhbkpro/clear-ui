@@ -30,7 +30,11 @@ h3.docs-page-title {
 }
 
 #docs-sidebar {
+  padding-top: 20px;
+
   li {
+    width: 100%;
+
     a {
       border-left: 1px solid transparent;
       padding: 5px 10px;

@@ -33,7 +33,7 @@
     var classes = this.element.attr('class').split(' ');
     classes.splice(classes.indexOf('cui-select'), 1);
     classes = classes.join(' ');
-    var htmlToggle = '<a class="dropdown-toggle '+ classes +'" data-toggle="dropdown"></a>';
+    var htmlToggle = '<a class="dropdown-toggle ' + classes + '" data-toggle="dropdown"></a>';
 
     // build options
     var htmlOptions = '';
@@ -68,9 +68,6 @@
     });
   };
 
-  // init plugin
-  $(function() {
-    $('.cui-select').cuiSelect();
-  });
-
+  // init cui-select
+  $('.cui-select').cuiSelect();
 })(jQuery);

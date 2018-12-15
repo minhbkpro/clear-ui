@@ -1,3 +1,5 @@
-# clear-ui
-
-Customize theme for bootstrap 4
+# Run
+```
+cd clear-ui
+gulp
+```
