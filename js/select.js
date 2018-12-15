@@ -41,15 +41,15 @@
       var $this = $(this);
 
       if($this.is('optgroup')) {
-        htmlOptions += '<li class="dropdown-header"><span>'+ $this.attr('label') +'</span></li>';
+        htmlOptions += '<h6 class="dropdown-header">'+ $this.attr('label') +'</h6>';
       }
 
       if($this.is('option')) {
-        htmlOptions += '<li><a data-value="'+ $this.attr('value') +'">'+ $this.text() +'</a></li>';
+        htmlOptions += '<a class="dropdown-item" data-value="' + $this.attr('value') + '">' + $this.text() + '</a>';
       }
     });
 
-    return '<div class="cui-select dropdown">' + htmlToggle + '<ul class="dropdown-menu">' + htmlOptions + '</ul></div>';
+    return '<div class="cui-select dropdown">' + htmlToggle + '<div class="dropdown-menu">' + htmlOptions + '</div></div>';
   };
 
   // get options function
