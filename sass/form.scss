@@ -127,6 +127,10 @@ input[type=radio] {
   &.dropdown {
     display: block;
 
+    &:not(.show):hover .dropdown-toggle {
+      border-top: 1px solid #999;
+    }
+
     .dropdown-toggle {
       height: 34px;
       width: 100%;
@@ -149,10 +153,6 @@ input[type=radio] {
         border-right: 4px solid transparent;
         border-bottom: 6px solid transparent;
         border-left: 4px solid transparent;
-      }
-
-      &:hover {
-        border-top: 1px solid #999;
       }
     }
 

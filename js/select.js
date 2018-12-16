@@ -37,11 +37,15 @@
 
     // build options
     var htmlOptions = '';
-    this.element.children().each(function() {
-      var $this = $(this);
+    this.element.children().each(function(index1, element1) {
+      var $this = $(element1);
 
       if($this.is('optgroup')) {
-        htmlOptions += '<h6 class="dropdown-header">'+ $this.attr('label') +'</h6>';
+        htmlOptions += '<h6 class="dropdown-header"><span>'+ $this.attr('label') +'</span></h6>';
+
+        $this.children().each(function(index2, element2) {
+          htmlOptions += '<a class="dropdown-item" data-value="' + $(element2).attr('value') + '">' + $(element2).text() + '</a>';
+        });
       }
 
       if($this.is('option')) {
