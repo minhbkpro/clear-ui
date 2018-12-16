@@ -9,16 +9,16 @@
   {% assign colors_middle = colors_size | divided_by: 2 | floor %}
   <div class="row">
     {% for color in site.data.colors %}
-      {% if forloop.first == true %}
-        <div class="col-sm-6">
-          <div class="row row-plain margin-bottom-10">
-            <div class="col-sm-4 content-right content-middle">Default</div>
-            <div class="col-sm-8">
-              <button type="button" class="btn btn-default">Normal</button>
-              <button type="button" class="btn btn-default active">Actived</button>
-              <button type="button" class="btn btn-default disabled">Disabled</button>
-            </div>
-          </div>
+    {% if forloop.first == true %}
+    <div class="col-sm-6">
+      <div class="row row-plain margin-bottom-10">
+        <div class="col-sm-4 content-right content-middle">Default</div>
+        <div class="col-sm-8">
+          <button type="button" class="btn btn-default">Normal</button>
+          <button type="button" class="btn btn-default active">Actived</button>
+          <button type="button" class="btn btn-default disabled">Disabled</button>
+        </div>
+      </div>
       {% endif %}
       <div class="row row-plain margin-bottom-10">
         <div class="col-sm-4 content-right content-middle text-capitalize">{{ color.name }}</div>
@@ -29,12 +29,12 @@
         </div>
       </div>
       {% if forloop.index == colors_middle %}
-        </div>
-        <div class="col-sm-6">
+    </div>
+    <div class="col-sm-6">
       {% endif %}
       {% if forloop.last == true %}
-        </div>
-      {% endif %}
+    </div>
+    {% endif %}
     {% endfor %}
   </div>
   <h3 id="buttons-labeled" class="docs-page-title">
@@ -51,27 +51,6 @@
       <button type="button" class="btn btn-danger">Danger</button>
       <button type="button" class="btn btn-shadow">Shadow</button>
       <button type="button" class="btn btn-link">Link</button>
-    </div>
-  </div>
-  <h3 id="buttons-sizes" class="docs-page-title">
-    <a href="#buttons-sizes" title="Button Sizes">Size</a>
-  </h3>
-  <div class="row">
-    <div class="col-md-10 offset-md-2">
-      <button type="button" class="btn btn-xs btn-default">Extra Small</button>
-      <button type="button" class="btn btn-sm btn-default">Small</button>
-      <button type="button" class="btn btn-default">Regular</button>
-      <button type="button" class="btn btn-lg btn-default">Large</button>
-      <button type="button" class="btn btn-xl btn-default">Extra Large</button>
-    </div>
-  </div>
-  <div class="row margin-top-20">
-    <div class="col-md-10 offset-md-2">
-      <button type="button" class="btn btn-xs btn-primary">Extra Small</button>
-      <button type="button" class="btn btn-sm btn-primary">Small</button>
-      <button type="button" class="btn btn-primary">Regular</button>
-      <button type="button" class="btn btn-lg btn-primary">Large</button>
-      <button type="button" class="btn btn-xl btn-primary">Extra Large</button>
     </div>
   </div>
   <h3 id="buttons-shadow" class="docs-page-title">
@@ -125,47 +104,47 @@
   <div class="row margin-bottom-20 margin-top-30 docs-button-icons">
     <div class="col-sm-10 offset-sm-2">
       {% for icon in site.data.icons %}
-        <button type="button" class="btn btn-link">
-          <i class="fa fa-fw {{ icon.name }}"></i>
-        </button>
+      <button type="button" class="btn btn-link">
+        <i class="fa fa-fw {{ icon.name }}"></i>
+      </button>
       {% endfor %}
     </div>
   </div>
   <div class="row margin-bottom-20 docs-button-icons">
     <div class="col-sm-10 offset-sm-2">
       {% for icon in site.data.icons %}
-        <button type="button" class="btn btn-default">
-          <i class="fa fa-fw {{ icon.name }}"></i>
-        </button>
+      <button type="button" class="btn btn-default">
+        <i class="fa fa-fw {{ icon.name }}"></i>
+      </button>
       {% endfor %}
     </div>
   </div>
   <div class="row margin-bottom-20 docs-button-icons">
     <div class="col-sm-10 offset-sm-2">
       {% for icon in site.data.icons %}
-        {% assign index = forloop.index | minus: 1 %}
-        <button type="button" class="btn btn-{{ site.data.colors[index].name }}">
-          <i class="fa fa-fw {{ icon.name }}"></i>
-        </button>
+      {% assign index = forloop.index | minus: 1 %}
+      <button type="button" class="btn btn-{{ site.data.colors[index].name }}">
+        <i class="fa fa-fw {{ icon.name }}"></i>
+      </button>
       {% endfor %}
     </div>
   </div>
   <div class="row margin-bottom-20 docs-button-icons">
     <div class="col-sm-10 offset-sm-2">
       {% for icon in site.data.icons %}
-        <button type="button" class="btn btn-shadow">
-          <i class="fa fa-fw {{ icon.name }}"></i>
-        </button>
+      <button type="button" class="btn btn-shadow">
+        <i class="fa fa-fw {{ icon.name }}"></i>
+      </button>
       {% endfor %}
     </div>
   </div>
   <div class="row margin-bottom-20 docs-button-icons">
     <div class="col-sm-10 offset-sm-2">
       {% for icon in site.data.icons %}
-        {% assign index = forloop.index | minus: 1 %}
-        <button type="button" class="btn box-shadow btn-{{ site.data.colors[index].name }}">
-          <i class="fa fa-fw {{ icon.name }}"></i>
-        </button>
+      {% assign index = forloop.index | minus: 1 %}
+      <button type="button" class="btn box-shadow btn-{{ site.data.colors[index].name }}">
+        <i class="fa fa-fw {{ icon.name }}"></i>
+      </button>
       {% endfor %}
     </div>
   </div>
@@ -175,38 +154,38 @@
   <div class="row margin-bottom-20 margin-top-30 docs-button-icons">
     <div class="col-sm-10 offset-sm-2">
       {% for icon in site.data.icons %}
-        <button type="button" class="btn btn-default btn-circle">
-          <i class="fa fa-fw {{ icon.name }}"></i>
-        </button>
+      <button type="button" class="btn btn-default btn-circle">
+        <i class="fa fa-fw {{ icon.name }}"></i>
+      </button>
       {% endfor %}
     </div>
   </div>
   <div class="row margin-bottom-20 docs-button-icons">
     <div class="col-sm-10 offset-sm-2">
       {% for icon in site.data.icons %}
-        {% assign index = forloop.index | minus: 1 %}
-        <button type="button" class="btn btn-circle btn-{{ site.data.colors[index].name }}">
-          <i class="fa fa-fw {{ icon.name }}"></i>
-        </button>
+      {% assign index = forloop.index | minus: 1 %}
+      <button type="button" class="btn btn-circle btn-{{ site.data.colors[index].name }}">
+        <i class="fa fa-fw {{ icon.name }}"></i>
+      </button>
       {% endfor %}
     </div>
   </div>
   <div class="row margin-bottom-20 docs-button-icons">
     <div class="col-sm-10 offset-sm-2">
       {% for icon in site.data.icons %}
-        <button type="button" class="btn btn-circle btn-shadow">
-          <i class="fa fa-fw {{ icon.name }}"></i>
-        </button>
+      <button type="button" class="btn btn-circle btn-shadow">
+        <i class="fa fa-fw {{ icon.name }}"></i>
+      </button>
       {% endfor %}
     </div>
   </div>
   <div class="row margin-bottom-20 docs-button-icons">
     <div class="col-sm-10 offset-sm-2">
       {% for icon in site.data.icons %}
-        {% assign index = forloop.index | minus: 1 %}
-        <button type="button" class="btn btn-circle box-shadow btn-{{ site.data.colors[index].name }}">
-          <i class="fa fa-fw {{ icon.name }}"></i>
-        </button>
+      {% assign index = forloop.index | minus: 1 %}
+      <button type="button" class="btn btn-circle box-shadow btn-{{ site.data.colors[index].name }}">
+        <i class="fa fa-fw {{ icon.name }}"></i>
+      </button>
       {% endfor %}
     </div>
   </div>
@@ -217,39 +196,105 @@
   <div class="row margin-bottom-20 margin-top-30 docs-button-icons">
     <div class="col-sm-10 offset-sm-2">
       {% for icon in site.data.icons %}
-        <button type="button" class="btn btn-default btn-circle btn-circle-fw">
-          <i class="fa fa-fw {{ icon.name }}"></i>
-        </button>
+      <button type="button" class="btn btn-default btn-circle btn-circle-fw">
+        <i class="fa fa-fw {{ icon.name }}"></i>
+      </button>
       {% endfor %}
     </div>
   </div>
   <div class="row margin-bottom-20 docs-button-icons">
     <div class="col-sm-10 offset-sm-2">
       {% for icon in site.data.icons %}
-        {% assign index = forloop.index | minus: 1 %}
-        <button type="button" class="btn btn-circle btn-circle-fw btn-{{ site.data.colors[index].name }}">
-          <i class="fa fa-fw {{ icon.name }}"></i>
-        </button>
+      {% assign index = forloop.index | minus: 1 %}
+      <button type="button" class="btn btn-circle btn-circle-fw btn-{{ site.data.colors[index].name }}">
+        <i class="fa fa-fw {{ icon.name }}"></i>
+      </button>
       {% endfor %}
     </div>
   </div>
   <div class="row margin-bottom-20 docs-button-icons">
     <div class="col-sm-10 offset-sm-2">
       {% for icon in site.data.icons %}
-        <button type="button" class="btn btn-circle btn-circle-fw btn-shadow">
-          <i class="fa fa-fw {{ icon.name }}"></i>
-        </button>
+      <button type="button" class="btn btn-circle btn-circle-fw btn-shadow">
+        <i class="fa fa-fw {{ icon.name }}"></i>
+      </button>
       {% endfor %}
     </div>
   </div>
   <div class="row margin-bottom-20 docs-button-icons">
     <div class="col-sm-10 offset-sm-2">
       {% for icon in site.data.icons %}
-        {% assign index = forloop.index | minus: 1 %}
-        <button type="button" class="btn btn-circle btn-circle-fw box-shadow btn-{{ site.data.colors[index].name }}">
-          <i class="fa fa-fw {{ icon.name }}"></i>
-        </button>
+      {% assign index = forloop.index | minus: 1 %}
+      <button type="button" class="btn btn-circle btn-circle-fw box-shadow btn-{{ site.data.colors[index].name }}">
+        <i class="fa fa-fw {{ icon.name }}"></i>
+      </button>
       {% endfor %}
+    </div>
+  </div>
+  <h3 id="buttons-sizes" class="docs-page-title">
+    <a href="#buttons-sizes" title="Button Sizes">Size</a>
+  </h3>
+  <div class="row">
+    <div class="col-md-10 offset-md-2">
+      <button type="button" class="btn btn-xs btn-default">Extra Small</button>
+      <button type="button" class="btn btn-sm btn-default">Small</button>
+      <button type="button" class="btn btn-default">Regular</button>
+      <button type="button" class="btn btn-lg btn-default">Large</button>
+      <button type="button" class="btn btn-xl btn-default">Extra Large</button>
+    </div>
+  </div>
+  <div class="row margin-top-20">
+    <div class="col-md-10 offset-md-2">
+      <button type="button" class="btn btn-xs btn-primary">Extra Small</button>
+      <button type="button" class="btn btn-sm btn-primary">Small</button>
+      <button type="button" class="btn btn-primary">Regular</button>
+      <button type="button" class="btn btn-lg btn-primary">Large</button>
+      <button type="button" class="btn btn-xl btn-primary">Extra Large</button>
+    </div>
+  </div>
+  <div class="row margin-top-20">
+    <div class="col-md-10 offset-md-2">
+      <button type="button" class="btn btn-link btn-xs"><i class="fa fa-fw fa-home"></i></button>
+      <button type="button" class="btn btn-link btn-sm"><i class="fa fa-fw fa-home"></i></button>
+      <button type="button" class="btn btn-link"><i class="fa fa-fw fa-home"></i></button>
+      <button type="button" class="btn btn-link btn-lg"><i class="fa fa-fw fa-home"></i></button>
+      <button type="button" class="btn btn-link btn-xl"><i class="fa fa-fw fa-home"></i></button>
+    </div>
+  </div>
+  <div class="row margin-top-20">
+    <div class="col-md-10 offset-md-2">
+      <button type="button" class="btn btn-default btn-xs"><i class="fa fa-fw fa-home"></i></button>
+      <button type="button" class="btn btn-default btn-sm"><i class="fa fa-fw fa-home"></i></button>
+      <button type="button" class="btn btn-default"><i class="fa fa-fw fa-home"></i></button>
+      <button type="button" class="btn btn-default btn-lg"><i class="fa fa-fw fa-home"></i></button>
+      <button type="button" class="btn btn-default btn-xl"><i class="fa fa-fw fa-home"></i></button>
+    </div>
+  </div>
+  <div class="row margin-top-20">
+    <div class="col-md-10 offset-md-2">
+      <button type="button" class="btn btn-circle btn-primary btn-xs"><i class="fa fa-fw fa-home"></i></button>
+      <button type="button" class="btn btn-circle btn-primary btn-sm"><i class="fa fa-fw fa-home"></i></button>
+      <button type="button" class="btn btn-circle btn-primary"><i class="fa fa-fw fa-home"></i></button>
+      <button type="button" class="btn btn-circle btn-primary btn-lg"><i class="fa fa-fw fa-home"></i></button>
+      <button type="button" class="btn btn-circle btn-primary btn-xl"><i class="fa fa-fw fa-home"></i></button>
+    </div>
+  </div>
+  <div class="row margin-top-20">
+    <div class="col-md-10 offset-md-2">
+      <button type="button" class="btn btn-circle btn-shadow btn-xs"><i class="fa fa-fw fa-home"></i></button>
+      <button type="button" class="btn btn-circle btn-shadow btn-sm"><i class="fa fa-fw fa-home"></i></button>
+      <button type="button" class="btn btn-circle btn-shadow"><i class="fa fa-fw fa-home"></i></button>
+      <button type="button" class="btn btn-circle btn-shadow btn-lg"><i class="fa fa-fw fa-home"></i></button>
+      <button type="button" class="btn btn-circle btn-shadow btn-xl"><i class="fa fa-fw fa-home"></i></button>
+    </div>
+  </div>
+  <div class="row margin-top-20">
+    <div class="col-md-10 offset-md-2">
+      <button type="button" class="btn btn-circle btn-blue box-shadow btn-xs"><i class="fa fa-fw fa-home"></i></button>
+      <button type="button" class="btn btn-circle btn-blue box-shadow btn-sm"><i class="fa fa-fw fa-home"></i></button>
+      <button type="button" class="btn btn-circle btn-blue box-shadow"><i class="fa fa-fw fa-home"></i></button>
+      <button type="button" class="btn btn-circle btn-blue box-shadow btn-lg"><i class="fa fa-fw fa-home"></i></button>
+      <button type="button" class="btn btn-circle btn-blue box-shadow btn-xl"><i class="fa fa-fw fa-home"></i></button>
     </div>
   </div>
 </section>
