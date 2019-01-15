@@ -85,13 +85,6 @@ $color-black: #000;
 $color-black-light: lighten($color-black, 10%);
 $color-black-lighter: lighten($color-black, 20%);
 
-// functional colors
-$color-primary: $color-blue;
-$color-success: $color-green;
-$color-info: $color-cyan;
-$color-warning: $color-yellow;
-$color-danger: $color-red;
-
 // color map
 $color-map: (
   'gray': ($color-gray-lighter, $color-gray-light, $color-gray, $color-gray-dark, $color-gray-darker),
@@ -110,4 +103,4 @@ $color-map: (
 );
 
 // tier list
-$tiers: ('xl', 'lg', 'sm', 'xs');
+$tiers: ('xs', 'sm', 'lg', 'xl');

@@ -1,80 +1,81 @@
-// Options
-$enable-shadows: true;
-
 // Colors
-$white: $color-white;
-$black: $color-black;
-$red: $color-red;
-$orange: $color-orange;
-$yellow: $color-yellow;
-$green: $color-green;
-$blue: $color-blue;
-$teal: $color-teal;
-$pink: $color-pink;
-$purple: $color-purple;
+$white: $color-white !default;
+$black: $color-black !default;
+$red: $color-red !default;
+$orange: $color-orange !default;
+$yellow: $color-yellow !default;
+$green: $color-green !default;
+$blue: $color-blue !default;
+$teal: $color-teal !default;
+$pink: $color-pink !default;
+$purple: $color-purple !default;
+$cyan: $color-cyan !default;
 
-$brand-primary: $color-blue;
-$brand-success: $color-green;
-$brand-info: $color-cyan;
-$brand-warning: $color-yellow;
-$brand-danger: $color-red;
+$primary: $color-blue !default;
+$success: $color-green !default;
+$info: $color-cyan !default;
+$warning: $color-yellow !default;
+$danger: $color-red !default;
 
-// Body
-$body-color: $color-black-lighter;
-
-// Components
-$border-radius: 2px;
-$border-radius-xl: 4px;
-$border-radius-lg: 3px;
-$border-radius-sm: 2px;
-$border-radius-xs: 2px;
-
-// Typography
-$font-size-root-value: 16;
-
-$font-size-base: 14 / $font-size-root-value * 1rem;
-$font-size-xl: 20 / $font-size-root-value * 1rem;
-$font-size-lg: 16 / $font-size-root-value * 1rem;
-$font-size-sm: 12 / $font-size-root-value * 1rem;
-$font-size-xs: 10 / $font-size-root-value * 1rem;
-
-// Buttons
-$btn-padding-y: 0rem;
-$btn-padding-x: 10 / $font-size-root-value * 1.2rem;
-$btn-line-height: 32 / $font-size-root-value * 1rem;
-
-$btn-padding-y-xl: 0rem;
-$btn-padding-x-xl: 13 / $font-size-root-value * 1.2rem;
-$btn-line-height-xl: 44 / $font-size-root-value * 1rem;
-
-$btn-padding-y-lg: 0rem;
-$btn-padding-x-lg: 12 / $font-size-root-value * 1.2rem;
-$btn-line-height-lg: 38 / $font-size-root-value * 1rem;
-
-$btn-padding-y-sm: 0rem;
-$btn-padding-x-sm: 8 / $font-size-root-value * 1.2rem;
-$btn-line-height-sm: 26 / $font-size-root-value * 1rem;
-
-$btn-padding-y-xs: 0rem;
-$btn-padding-x-xs: 6 / $font-size-root-value * 1.2rem;
-$btn-line-height-xs: 20 / $font-size-root-value * 1rem;
-
-$btn-border-radius: $border-radius;
-$btn-border-radius-xl: $border-radius-xl;
-$btn-border-radius-lg: $border-radius-lg;
-$btn-border-radius-sm: $border-radius-sm;
-$btn-border-radius-xs: $border-radius-xs;
-
-$btn-transition: none;
-
-$btn-fw-icon-width: 18 / 14 * $font-size-base;
-$btn-fw-icon-width-xl: 18 / 14 * $font-size-xl;
-$btn-fw-icon-width-lg: 18 / 14 * $font-size-lg;
-$btn-fw-icon-width-sm: 18 / 14 * $font-size-sm;
-$btn-fw-icon-width-xs: 18 / 14 * $font-size-xs;
-
-$btn-fw-margin: ($btn-padding-x * 2 + $btn-fw-icon-width - $btn-line-height) / 2;
-$btn-fw-margin-xl: ($btn-padding-x-xl * 2 + $btn-fw-icon-width-xl - $btn-line-height-xl) / 2;
-$btn-fw-margin-lg: ($btn-padding-x-lg * 2 + $btn-fw-icon-width-lg - $btn-line-height-lg) / 2;
-$btn-fw-margin-sm: ($btn-padding-x-sm * 2 + $btn-fw-icon-width-sm - $btn-line-height-sm) / 2;
-$btn-fw-margin-xs: ($btn-padding-x-xs * 2 + $btn-fw-icon-width-xs - $btn-line-height-xs) / 2;
+//// Options
+//$enable-shadows: true;
+//
+//// Body
+//$body-color: $color-black-lighter;
+//
+//// Components
+//$border-radius: 2px;
+//$border-radius-xl: 4px;
+//$border-radius-lg: 3px;
+//$border-radius-sm: 2px;
+//$border-radius-xs: 2px;
+//
+//// Typography
+//$font-size-root-value: 16;
+//
+//$font-size-base: 14 / $font-size-root-value * 1rem;
+//$font-size-xl: 20 / $font-size-root-value * 1rem;
+//$font-size-lg: 16 / $font-size-root-value * 1rem;
+//$font-size-sm: 12 / $font-size-root-value * 1rem;
+//$font-size-xs: 10 / $font-size-root-value * 1rem;
+//
+//// Buttons
+//$btn-padding-y: 0rem;
+//$btn-padding-x: 10 / $font-size-root-value * 1.2rem;
+//$btn-line-height: 32 / $font-size-root-value * 1rem;
+//
+//$btn-padding-y-xl: 0rem;
+//$btn-padding-x-xl: 13 / $font-size-root-value * 1.2rem;
+//$btn-line-height-xl: 44 / $font-size-root-value * 1rem;
+//
+//$btn-padding-y-lg: 0rem;
+//$btn-padding-x-lg: 12 / $font-size-root-value * 1.2rem;
+//$btn-line-height-lg: 38 / $font-size-root-value * 1rem;
+//
+//$btn-padding-y-sm: 0rem;
+//$btn-padding-x-sm: 8 / $font-size-root-value * 1.2rem;
+//$btn-line-height-sm: 26 / $font-size-root-value * 1rem;
+//
+//$btn-padding-y-xs: 0rem;
+//$btn-padding-x-xs: 6 / $font-size-root-value * 1.2rem;
+//$btn-line-height-xs: 20 / $font-size-root-value * 1rem;
+//
+//$btn-border-radius: $border-radius;
+//$btn-border-radius-xl: $border-radius-xl;
+//$btn-border-radius-lg: $border-radius-lg;
+//$btn-border-radius-sm: $border-radius-sm;
+//$btn-border-radius-xs: $border-radius-xs;
+//
+//$btn-transition: none;
+//
+//$btn-fw-icon-width: 18 / 14 * $font-size-base;
+//$btn-fw-icon-width-xl: 18 / 14 * $font-size-xl;
+//$btn-fw-icon-width-lg: 18 / 14 * $font-size-lg;
+//$btn-fw-icon-width-sm: 18 / 14 * $font-size-sm;
+//$btn-fw-icon-width-xs: 18 / 14 * $font-size-xs;
+//
+//$btn-fw-margin: ($btn-padding-x * 2 + $btn-fw-icon-width - $btn-line-height) / 2;
+//$btn-fw-margin-xl: ($btn-padding-x-xl * 2 + $btn-fw-icon-width-xl - $btn-line-height-xl) / 2;
+//$btn-fw-margin-lg: ($btn-padding-x-lg * 2 + $btn-fw-icon-width-lg - $btn-line-height-lg) / 2;
+//$btn-fw-margin-sm: ($btn-padding-x-sm * 2 + $btn-fw-icon-width-sm - $btn-line-height-sm) / 2;
+//$btn-fw-margin-xs: ($btn-padding-x-xs * 2 + $btn-fw-icon-width-xs - $btn-line-height-xs) / 2;
