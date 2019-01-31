@@ -3,12 +3,12 @@ layout: default
 ---
 
 <section class="docs-section">
-  <h1 id="buttons" class="docs-page-title">
+  <h3 id="buttons" class="docs-page-title">
     <a href="#buttons" title="Buttons">Buttons</a>
-  </h1>
-  <h3 id="buttons-all-colors" class="docs-page-title">
-    <a href="#buttons-all-colors" title="All colors">All Colors</a>
   </h3>
+  <h5 id="buttons-all-colors" class="mt-5">
+    <a href="#buttons-all-colors" title="All colors">All Colors</a>
+  </h5>
   {% assign colors_size = site.data.colors | size %}
   {% assign colors_middle = colors_size | divided_by: 2 | floor %}
   <div class="row">
@@ -41,9 +41,9 @@ layout: default
     {% endif %}
     {% endfor %}
   </div>
-  <h3 id="buttons-labeled" class="docs-page-title">
+  <h5 id="buttons-labeled" class="mt-5">
     <a href="#buttons-labeled" title="Labeled">Labeled</a>
-  </h3>
+  </h5>
   <div class="row">
     <div class="col-sm-10 offset-sm-2">
       <button type="button" class="btn btn-default">Default</button>
@@ -57,9 +57,9 @@ layout: default
       <button type="button" class="btn btn-link">Link</button>
     </div>
   </div>
-  <h3 id="buttons-shadow" class="docs-page-title">
+  <h5 id="buttons-shadow" class="mt-5">
     <a href="#buttons-shadow" title="Button Shadow">Shadow</a>
-  </h3>
+  </h5>
   <div class="row">
     <div class="col-sm-10 offset-sm-2">
       <button type="button" class="btn btn-default box-shadow">Default</button>
@@ -67,9 +67,9 @@ layout: default
       <button type="button" class="btn btn-shadow">Shadow</button>
     </div>
   </div>
-  <h3 id="with-icons" class="docs-page-title">
+  <h5 id="with-icons" class="mt-5">
     <a href="#with-icons" title="With Icons">With Icons</a>
-  </h3>
+  </h5>
   <div class="row margin-bottom-20 margin-top-40 docs-button-icons">
     <div class="col-sm-10 offset-sm-2">
       <button type="button" class="btn btn-primary">
@@ -102,9 +102,9 @@ layout: default
       </button>
     </div>
   </div>
-  <h3 id="only-icons" class="docs-page-title">
+  <h5 id="only-icons" class="mt-5">
     <a href="#only-icons" title="Only Icons">Only Icons</a>
-  </h3>
+  </h5>
   <div class="row margin-bottom-20 margin-top-30 docs-button-icons">
     <div class="col-sm-10 offset-sm-2">
       {% for icon in site.data.icons %}
@@ -152,9 +152,9 @@ layout: default
       {% endfor %}
     </div>
   </div>
-  <h3 id="circle-icons" class="docs-page-title">
+  <h5 id="circle-icons" class="mt-5">
     <a href="#circle-icons" title="Circle Icons">Circle Icons</a>
-  </h3>
+  </h5>
   <div class="row margin-bottom-20 margin-top-30 docs-button-icons">
     <div class="col-sm-10 offset-sm-2">
       {% for icon in site.data.icons %}
@@ -193,9 +193,9 @@ layout: default
       {% endfor %}
     </div>
   </div>
-  <h3 id="circle-icons" class="docs-page-title">
+  <h5 id="circle-icons-fixed-width" class="mt-5">
     <a href="#circle-icons" title="Circle Icons Fixed Width">Circle Icons Fixed Width</a>
-  </h3>
+  </h5>
   <p>Fit with "Only Icons" buttons</P>
   <div class="row margin-bottom-20 margin-top-30 docs-button-icons">
     <div class="col-sm-10 offset-sm-2">
@@ -235,9 +235,9 @@ layout: default
       {% endfor %}
     </div>
   </div>
-  <h3 id="buttons-sizes" class="docs-page-title">
+  <h5 id="buttons-sizes" class="mt-5">
     <a href="#buttons-sizes" title="Button Sizes">Size</a>
-  </h3>
+  </h5>
   <div class="row">
     <div class="col-md-10 offset-md-2">
       <button type="button" class="btn btn-xs btn-default">Extra Small</button>

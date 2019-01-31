@@ -2,11 +2,11 @@
   text-decoration: none;
 }
 
-h1.docs-page-title {
+.docs-page-title {
   position: relative;
 }
 
-h1.docs-page-title:after {
+.docs-page-title:after {
   content: '';
   display: block;
   position: absolute;
@@ -18,15 +18,11 @@ h1.docs-page-title:after {
   border-bottom: 1px solid #ebebeb;
 }
 
-h1.docs-page-title a {
+.docs-page-title a {
   position: relative;
   z-index: 1;
   background-color: #fff;
   padding-right: 10px;
-}
-
-h3.docs-page-title {
-  margin-top: 40px;
 }
 
 #docs-sidebar {
