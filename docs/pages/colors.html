@@ -1,34 +1,38 @@
+---
+layout: default
+---
+
 <section class="docs-section">
   <h1 id="colors" class="docs-page-title">
     <a href="#colors" title="Colors">Colors</a>
   </h1>
 
   {% for color in site.data.colors %}
-    <div class="row docs-color-list row-plain margin-bottom-10">
-      <div class="col-sm-2 content-right content-middle">
-        <p class="text-middle text-capitalize">{{ color.name }}</p>
-      </div>
-      <div class="col-sm-2">
-        <div class="docs-color-box bg-{{ color.name }}-lighter d-flex justify-content-center align-items-center color-white"></div>
-        <p class="text-capitalize text-center">{{ color.name }} Lighter</p>
-      </div>
-      <div class="col-sm-2">
-        <div class="docs-color-box bg-{{ color.name }}-light d-flex justify-content-center align-items-center color-white"></div>
-        <p class="text-capitalize text-center">{{ color.name }} Light</p>
-      </div>
-      <div class="col-sm-2">
-        <div class="docs-color-box bg-{{ color.name }} d-flex justify-content-center align-items-center color-white"></div>
-        <p class="text-capitalize text-center">{{ color.name }}</p>
-      </div>
-      <div class="col-sm-2">
-        <div class="docs-color-box bg-{{ color.name }}-dark d-flex justify-content-center align-items-center color-white"></div>
-        <p class="text-capitalize text-center">{{ color.name }} Dark</p>
-      </div>
-      <div class="col-sm-2">
-        <div class="docs-color-box bg-{{ color.name }}-darker d-flex justify-content-center align-items-center color-white"></div>
-        <p class="text-capitalize text-center">{{ color.name }} Darker</p>
-      </div>
+  <div class="row docs-color-list row-plain margin-bottom-10">
+    <div class="col-sm-2 content-right content-middle">
+      <p class="text-middle text-capitalize">{{ color.name }}</p>
     </div>
+    <div class="col-sm-2">
+      <div class="docs-color-box bg-{{ color.name }}-lighter d-flex justify-content-center align-items-center color-white"></div>
+      <p class="text-capitalize text-center">{{ color.name }} Lighter</p>
+    </div>
+    <div class="col-sm-2">
+      <div class="docs-color-box bg-{{ color.name }}-light d-flex justify-content-center align-items-center color-white"></div>
+      <p class="text-capitalize text-center">{{ color.name }} Light</p>
+    </div>
+    <div class="col-sm-2">
+      <div class="docs-color-box bg-{{ color.name }} d-flex justify-content-center align-items-center color-white"></div>
+      <p class="text-capitalize text-center">{{ color.name }}</p>
+    </div>
+    <div class="col-sm-2">
+      <div class="docs-color-box bg-{{ color.name }}-dark d-flex justify-content-center align-items-center color-white"></div>
+      <p class="text-capitalize text-center">{{ color.name }} Dark</p>
+    </div>
+    <div class="col-sm-2">
+      <div class="docs-color-box bg-{{ color.name }}-darker d-flex justify-content-center align-items-center color-white"></div>
+      <p class="text-capitalize text-center">{{ color.name }} Darker</p>
+    </div>
+  </div>
   {% endfor %}
 
   <div class="row docs-color-list row-plain margin-bottom-10">
