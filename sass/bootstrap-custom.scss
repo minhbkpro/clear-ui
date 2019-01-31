@@ -1,4 +1,4 @@
-// Colors
+// colors
 $white: $color-white !default;
 $black: $color-black !default;
 $red: $color-red !default;
@@ -16,6 +16,9 @@ $success: $color-green !default;
 $info: $color-cyan !default;
 $warning: $color-yellow !default;
 $danger: $color-red !default;
+
+// fonts
+$font-size-base: 0.875rem !default;
 
 //// Options
 //$enable-shadows: true;

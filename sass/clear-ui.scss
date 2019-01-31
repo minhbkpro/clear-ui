@@ -8,10 +8,14 @@
 // bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
+// common
+@import 'common';
+
 // components
 @import 'buttons';
 @import 'form';
 // @import 'panel';
+@import 'sidebar';
 
 // utility
 @import 'utilities';
