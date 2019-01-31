@@ -1,11 +1,11 @@
 <nav class="cui-sidebar">
-  <ul class="nav">
+  <ul id="nav-accordion" class="nav">
     <li class="nav-item">
       <a class="nav-link active" href="#">Link 1</a>
     </li>
     <li class="nav-item nav-dropdown open">
-      <a class="nav-link" href="#">Link 2</a>
-      <ul class="nav">
+      <a class="nav-link" data-toggle="collapse" data-target="#collapse1">Link 2</a>
+      <ul id="collapse1" class="nav collapse" data-parent="#nav-accordion">
         <li class="nav-item">
           <a class="nav-link active" href="#">Link 21</a>
         </li>
@@ -15,8 +15,8 @@
       </ul>
     </li>
     <li class="nav-item nav-dropdown">
-      <a class="nav-link" href="#">Link 3</a>
-      <ul class="nav">
+      <a class="nav-link" data-toggle="collapse" data-target="#collapse2">Link 3</a>
+      <ul id="collapse2" class="nav collapse" data-parent="#nav-accordion">
         <li class="nav-item">
           <a class="nav-link active" href="#">Link 31</a>
         </li>
