@@ -1,3 +1,9 @@
+.btn {
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+
 //// line-height map
 //$btn-line-height-map: (
 //  'xl': $btn-line-height-xl,
