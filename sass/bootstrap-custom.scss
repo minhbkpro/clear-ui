@@ -17,6 +17,9 @@ $info: $color-cyan !default;
 $warning: $color-yellow !default;
 $danger: $color-red !default;
 
+// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
+$yiq-contrasted-threshold:  200 !default;
+
 // fonts
 $font-size-base: 0.875rem !default;
 
