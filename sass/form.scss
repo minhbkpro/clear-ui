@@ -1,3 +1,37 @@
+.form-control-plaintext:focus {
+  outline: none;
+}
+
+.custom-select-lg {
+  border-radius: $border-radius-lg;
+}
+
+.custom-select-sm {
+  border-radius: $border-radius-sm;
+}
+
+.was-validated .form-control:valid:focus,
+.form-control.is-valid:focus,
+.was-validated .custom-select:valid:focus,
+.custom-select.is-valid:focus,
+.was-validated .custom-file-input:valid:focus ~ .custom-file-label,
+.custom-file-input.is-valid:focus ~ .custom-file-label,
+.was-validated .custom-control-input:valid:focus ~ .custom-control-label::before,
+.custom-control-input.is-valid:focus ~ .custom-control-label::before {
+  box-shadow: 0 -1px 8px rgba($color-green-lighter, 0.6) !important;
+}
+
+.was-validated .form-control:invalid:focus,
+.form-control.is-invalid:focus,
+.was-validated .custom-select:invalid:focus,
+.custom-select.is-invalid:focus,
+.was-validated .custom-file-input:invalid:focus ~ .custom-file-label,
+.custom-file-input.is-invalid:focus ~ .custom-file-label,
+.was-validated .custom-control-input:invalid:focus ~ .custom-control-label::before,
+.custom-control-input.is-invalid:focus ~ .custom-control-label::before {
+  box-shadow: 0 -1px 8px rgba($color-red-lighter, 0.6) !important;
+}
+
 //.form-control {
 //  -moz-box-shadow: none;
 //  -webkit-box-shadow: none;
