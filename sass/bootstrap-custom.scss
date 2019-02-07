@@ -41,11 +41,29 @@ $border-radius-sm: .125rem !default;
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 $input-btn-padding-y: .3125rem !default;
 $input-btn-focus-box-shadow: inset 0 1px 1px rgba($color-black, 0.075), 0 -1px 8px rgba($color-blue, 0.5) !default;
-$custom-select-focus-box-shadow: inset 0 1px 1px rgba($color-black, 0.075), 0 -1px 8px rgba($color-blue, 0.5) !default;
+$custom-select-focus-box-shadow: $input-btn-focus-box-shadow !default;
 
 // Navbar
 $navbar-toggler-padding-y: .125rem !default;
 $navbar-toggler-padding-x: .5625rem !default;
+
+// Cards
+$card-spacer-y: .5625rem !default;
+$card-spacer-x: .9375rem !default;
+
+// Navs
+$nav-link-padding-y: .375rem !default;
+$nav-link-padding-x: .875rem !default;
+
+// Modals
+$modal-inner-padding: .9375rem !default;
+$modal-header-padding-y: .5625rem !default;
+$modal-header-padding-x: .9375rem !default;
+
+// Pagination
+$pagination-padding-x: .875rem !default;
+$pagination-padding-x-sm: .625rem !default;
+$pagination-padding-x-lg: 1.625rem !default;
 
 //// Options
 //$enable-shadows: true;

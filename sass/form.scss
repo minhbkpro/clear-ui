@@ -1,4 +1,5 @@
-.form-control-plaintext:focus {
+.form-control-plaintext:focus,
+.form-control-file:focus {
   outline: none;
 }
 

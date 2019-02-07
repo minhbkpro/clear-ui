@@ -8,6 +8,11 @@ button:focus {
   }
 }
 
+.btn-secondary:focus,
+.btn-secondary.focus {
+  box-shadow: 0 -1px 8px rgba($gray-600, 0.6) !important;
+}
+
 //// line-height map
 //$btn-line-height-map: (
 //  'xl': $btn-line-height-xl,

@@ -1,0 +1,24 @@
+%dropdowns-active-before-after {
+  content: '';
+  height: 100%;
+  width: 1px;
+  display: block;
+  position: absolute;
+  top: 0;
+  background-color: $dropdown-link-active-bg;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  position: relative;
+
+  &::before {
+    @extend %dropdowns-active-before-after;
+    left: -1px;
+  }
+
+  &::after {
+    @extend %dropdowns-active-before-after;
+    right: -1px;
+  }
+}
