@@ -40,6 +40,15 @@
   width: 300px;
 }
 
+.navbar .navbar-nav .notifications .nav-link .badge {
+  font-size: 8px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  margin-top: -15px;
+  margin-right: -17px;
+}
+
 .sidebar {
   user-select: none;
   background-color: #314961;
