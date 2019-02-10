@@ -17,11 +17,11 @@ $info: $color-cyan !default;
 $warning: $color-yellow !default;
 $danger: $color-red !default;
 
-// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
 $yiq-contrasted-threshold:  200 !default;
 
 // fonts
 $font-size-base: 0.875rem !default;
+$font-weight-base: lighter !default;
 
 // Grid columns
 $grid-gutter-width:           20px !default;
@@ -30,15 +30,11 @@ $grid-gutter-width:           20px !default;
 $spacer: 0.625rem !default;
 
 // Components
-//
-// Define common padding and border radius sizes and more.
 $border-radius: .125rem !default;
 $border-radius-lg: .1875rem !default;
 $border-radius-sm: .125rem !default;
 
 // Buttons + Forms
-//
-// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 $input-btn-padding-y: .3125rem !default;
 $input-btn-focus-box-shadow: inset 0 1px 1px rgba($color-black, 0.075), 0 -1px 8px rgba($color-blue, 0.5) !default;
 $custom-select-focus-box-shadow: $input-btn-focus-box-shadow !default;
@@ -65,65 +61,5 @@ $pagination-padding-x: .875rem !default;
 $pagination-padding-x-sm: .625rem !default;
 $pagination-padding-x-lg: 1.625rem !default;
 
-//// Options
-//$enable-shadows: true;
-//
-//// Body
-//$body-color: $color-black-lighter;
-//
-//// Components
-//$border-radius: 2px;
-//$border-radius-xl: 4px;
-//$border-radius-lg: 3px;
-//$border-radius-sm: 2px;
-//$border-radius-xs: 2px;
-//
-//// Typography
-//$font-size-root-value: 16;
-//
-//$font-size-base: 14 / $font-size-root-value * 1rem;
-//$font-size-xl: 20 / $font-size-root-value * 1rem;
-//$font-size-lg: 16 / $font-size-root-value * 1rem;
-//$font-size-sm: 12 / $font-size-root-value * 1rem;
-//$font-size-xs: 10 / $font-size-root-value * 1rem;
-//
-//// Buttons
-//$btn-padding-y: 0rem;
-//$btn-padding-x: 10 / $font-size-root-value * 1.2rem;
-//$btn-line-height: 32 / $font-size-root-value * 1rem;
-//
-//$btn-padding-y-xl: 0rem;
-//$btn-padding-x-xl: 13 / $font-size-root-value * 1.2rem;
-//$btn-line-height-xl: 44 / $font-size-root-value * 1rem;
-//
-//$btn-padding-y-lg: 0rem;
-//$btn-padding-x-lg: 12 / $font-size-root-value * 1.2rem;
-//$btn-line-height-lg: 38 / $font-size-root-value * 1rem;
-//
-//$btn-padding-y-sm: 0rem;
-//$btn-padding-x-sm: 8 / $font-size-root-value * 1.2rem;
-//$btn-line-height-sm: 26 / $font-size-root-value * 1rem;
-//
-//$btn-padding-y-xs: 0rem;
-//$btn-padding-x-xs: 6 / $font-size-root-value * 1.2rem;
-//$btn-line-height-xs: 20 / $font-size-root-value * 1rem;
-//
-//$btn-border-radius: $border-radius;
-//$btn-border-radius-xl: $border-radius-xl;
-//$btn-border-radius-lg: $border-radius-lg;
-//$btn-border-radius-sm: $border-radius-sm;
-//$btn-border-radius-xs: $border-radius-xs;
-//
-//$btn-transition: none;
-//
-//$btn-fw-icon-width: 18 / 14 * $font-size-base;
-//$btn-fw-icon-width-xl: 18 / 14 * $font-size-xl;
-//$btn-fw-icon-width-lg: 18 / 14 * $font-size-lg;
-//$btn-fw-icon-width-sm: 18 / 14 * $font-size-sm;
-//$btn-fw-icon-width-xs: 18 / 14 * $font-size-xs;
-//
-//$btn-fw-margin: ($btn-padding-x * 2 + $btn-fw-icon-width - $btn-line-height) / 2;
-//$btn-fw-margin-xl: ($btn-padding-x-xl * 2 + $btn-fw-icon-width-xl - $btn-line-height-xl) / 2;
-//$btn-fw-margin-lg: ($btn-padding-x-lg * 2 + $btn-fw-icon-width-lg - $btn-line-height-lg) / 2;
-//$btn-fw-margin-sm: ($btn-padding-x-sm * 2 + $btn-fw-icon-width-sm - $btn-line-height-sm) / 2;
-//$btn-fw-margin-xs: ($btn-padding-x-xs * 2 + $btn-fw-icon-width-xs - $btn-line-height-xs) / 2;
+// Dropdowns
+$dropdown-link-hover-bg: lighten($color-blue-gray, 60%) !default;
