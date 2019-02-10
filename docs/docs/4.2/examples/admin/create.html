@@ -3,9 +3,9 @@ layout: examples
 title: Admin Template
 extra_css:
   - "https://use.fontawesome.com/releases/v5.7.1/css/all.css"
-  - "admin.css"
+  - "../admin.css"
 extra_js:
-  - "admin.js"
+  - "../admin.js"
 ---
 
 <nav class="navbar navbar-expand bg-blue-gray-dark color-white py-0">
@@ -170,13 +170,13 @@ extra_js:
           </a>
           <ul id="nav-users" class="nav collapse show" data-parent="#nav-accordion">
             <li class="nav-item">
-              <a class="nav-link text-reset active" href="/docs/4.2/examples/admin">
+              <a class="nav-link text-reset" href="/docs/4.2/examples/admin">
                 <i class="far fa-fw fa-circle mr-3"></i>
                 <span>Index</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-reset" href="/docs/4.2/examples/admin/create">
+              <a class="nav-link text-reset active" href="/docs/4.2/examples/admin/create.html">
                 <i class="far fa-fw fa-circle mr-3"></i>
                 <span>Create</span>
               </a>
@@ -262,225 +262,74 @@ extra_js:
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb bg-white px-0 mb-0">
           <li class="breadcrumb-item"><a href="#">Users</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Index</li>
+          <li class="breadcrumb-item active" aria-current="page">Create</li>
         </ol>
       </nav>
       <div class="d-flex align-items-center mb-4">
-        <h3 class="mb-0">Users index</h3>
-        <a class="btn btn-primary ml-4" href="/docs/4.2/examples/admin/create">
-          <i class="fas fa-sm fa-fw fa-plus mr-1"></i>
-          <span>Create</span>
-        </a>
+        <h3 class="mb-0">Users create</h3>
       </div>
-      <form>
-        <div class="row mb-2">
-          <div class="col-md-4 form-inline">
-            <label class="my-1 mr-2" for="per-page">Show</label>
-            <select id="per-page" class="custom-select my-1 mr-sm-2">
-              <option value="10">10</option>
-              <option value="25">25</option>
-              <option value="50">50</option>
-              <option value="100">100</option>
-            </select>
-            <label class="my-1 mr-2" for="per-page">entries</label>
-          </div>
-          <div class="col-md-8 form-inline justify-content-end">
-            <label class="my-1 mr-2" for="filter-first">First</label>
-            <input type="text" id="filter-first" class="form-control mr-sm-4 w-25">
-            <label class="my-1 mr-2" for="filter-last">Last</label>
-            <input type="text" id="filter-last" class="form-control mr-sm-2 w-25">
-            <button type="submit" class="btn btn-primary my-1">
-              <i class="fas fa-sm fa-fw fa-search mr-1"></i>
-              <span>Search</span>
-            </button>
-          </div>
-        </div>
-      </form>
-      <table class="table table-bordered mb-2">
-        <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">First</th>
-          <th scope="col">Last</th>
-          <th scope="col">Handle</th>
-          <th scope="col" class="w-15">Actions</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td scope="row">1</td>
-          <td><a href="#">Mark</a></td>
-          <td>Otto</td>
-          <td>@mdo</td>
-          <td>
-            <a class="btn btn-sm btn-light" href="#">
-              <i class="fas fa-sm fa-fw fa-pencil-alt"></i>
-              <span>Edit</span>
-            </a>
-            <a class="btn btn-sm btn-light" href="#">
-              <i class="far fa-sm fa-fw fa-trash-alt"></i>
-              <span>Delete</span>
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td scope="row">2</td>
-          <td><a href="#">Jacob</a></td>
-          <td>Thornton</td>
-          <td>@fat</td>
-          <td>
-            <a class="btn btn-sm btn-light" href="#">
-              <i class="fas fa-sm fa-fw fa-pencil-alt"></i>
-              <span>Edit</span>
-            </a>
-            <a class="btn btn-sm btn-light" href="#">
-              <i class="far fa-sm fa-fw fa-trash-alt"></i>
-              <span>Delete</span>
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td scope="row">3</td>
-          <td colspan="2"><a href="#">Larry the Bird</a></td>
-          <td>@twitter</td>
-          <td>
-            <a class="btn btn-sm btn-light" href="#">
-              <i class="fas fa-sm fa-fw fa-pencil-alt"></i>
-              <span>Edit</span>
-            </a>
-            <a class="btn btn-sm btn-light" href="#">
-              <i class="far fa-sm fa-fw fa-trash-alt"></i>
-              <span>Delete</span>
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td scope="row">4</td>
-          <td><a href="#">Mark</a></td>
-          <td>Otto</td>
-          <td>@mdo</td>
-          <td>
-            <a class="btn btn-sm btn-light" href="#">
-              <i class="fas fa-sm fa-fw fa-pencil-alt"></i>
-              <span>Edit</span>
-            </a>
-            <a class="btn btn-sm btn-light" href="#">
-              <i class="far fa-sm fa-fw fa-trash-alt"></i>
-              <span>Delete</span>
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td scope="row">5</td>
-          <td><a href="#">Jacob</a></td>
-          <td>Thornton</td>
-          <td>@fat</td>
-          <td>
-            <a class="btn btn-sm btn-light" href="#">
-              <i class="fas fa-sm fa-fw fa-pencil-alt"></i>
-              <span>Edit</span>
-            </a>
-            <a class="btn btn-sm btn-light" href="#">
-              <i class="far fa-sm fa-fw fa-trash-alt"></i>
-              <span>Delete</span>
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td scope="row">6</td>
-          <td colspan="2"><a href="#">Larry the Bird</a></td>
-          <td>@twitter</td>
-          <td>
-            <a class="btn btn-sm btn-light" href="#">
-              <i class="fas fa-sm fa-fw fa-pencil-alt"></i>
-              <span>Edit</span>
-            </a>
-            <a class="btn btn-sm btn-light" href="#">
-              <i class="far fa-sm fa-fw fa-trash-alt"></i>
-              <span>Delete</span>
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td scope="row">7</td>
-          <td><a href="#">Mark</a></td>
-          <td>Otto</td>
-          <td>@mdo</td>
-          <td>
-            <a class="btn btn-sm btn-light" href="#">
-              <i class="fas fa-sm fa-fw fa-pencil-alt"></i>
-              <span>Edit</span>
-            </a>
-            <a class="btn btn-sm btn-light" href="#">
-              <i class="far fa-sm fa-fw fa-trash-alt"></i>
-              <span>Delete</span>
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td scope="row">8</td>
-          <td><a href="#">Jacob</a></td>
-          <td>Thornton</td>
-          <td>@fat</td>
-          <td>
-            <a class="btn btn-sm btn-light" href="#">
-              <i class="fas fa-sm fa-fw fa-pencil-alt"></i>
-              <span>Edit</span>
-            </a>
-            <a class="btn btn-sm btn-light" href="#">
-              <i class="far fa-sm fa-fw fa-trash-alt"></i>
-              <span>Delete</span>
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td scope="row">9</td>
-          <td colspan="2"><a href="#">Larry the Bird</a></td>
-          <td>@twitter</td>
-          <td>
-            <a class="btn btn-sm btn-light" href="#">
-              <i class="fas fa-sm fa-fw fa-pencil-alt"></i>
-              <span>Edit</span>
-            </a>
-            <a class="btn btn-sm btn-light" href="#">
-              <i class="far fa-sm fa-fw fa-trash-alt"></i>
-              <span>Delete</span>
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td scope="row">10</td>
-          <td colspan="2"><a href="#">Larry the Bird</a></td>
-          <td>@twitter</td>
-          <td>
-            <a class="btn btn-sm btn-light" href="#">
-              <i class="fas fa-sm fa-fw fa-pencil-alt"></i>
-              <span>Edit</span>
-            </a>
-            <a class="btn btn-sm btn-light" href="#">
-              <i class="far fa-sm fa-fw fa-trash-alt"></i>
-              <span>Delete</span>
-            </a>
-          </td>
-        </tr>
-        </tbody>
-      </table>
-      <div class="row mb-5">
-        <div class="col-md-6">Showing 1 to 10 of 57 entries</div>
-        <div class="col-md-6">
-          <ul class="pagination justify-content-end mb-0">
-            <li class="page-item disabled">
-              <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item active" aria-current="page">
-              <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-              <a class="page-link" href="#">Next</a>
-            </li>
-          </ul>
+      <div class="row">
+        <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+          <form>
+            <div class="form-group row">
+              <label for="input-name" class="col-sm-2 col-form-label">Name</label>
+              <div class="col-sm-10">
+                <input type="text" id="input-name" class="form-control" name="name" placeholder="Name">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="input-email" class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" id="input-email" class="form-control" name="email" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="input-password" class="col-sm-2 col-form-label">Password</label>
+              <div class="col-sm-10">
+                <input type="password" id="input-password" class="form-control" name="password" placeholder="Password">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="row">
+                <label class="col-form-label col-sm-2 pt-0">Gender</label>
+                <div class="col-sm-10">
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="input-gender-1" class="custom-control-input" name="gender" value="1">
+                    <label class="custom-control-label" for="input-gender-1">Male</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="input-gender-2" class="custom-control-input" name="gender" value="2">
+                    <label class="custom-control-label" for="input-gender-2">Female</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="input-gender-3" class="custom-control-input" name="gender" value="3">
+                    <label class="custom-control-label" for="input-gender-3">Other</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-2">Active</div>
+              <div class="col-sm-10">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" id="input-active" class="custom-control-input" name="active" value="1">
+                  <label class="custom-control-label" for="input-active">Active</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-10 offset-sm-2">
+                <button type="submit" class="btn btn-primary">
+                  <i class="far fa-sm fa-fw fa-save"></i>
+                  <span>Save</span>
+                </button>
+                <a class="btn btn-light" href="/docs/4.2/examples/admin">
+                  <i class="fas fa-sm fa-fw fa-ban"></i>
+                  <span>Cancel</span>
+                </a>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </main>
