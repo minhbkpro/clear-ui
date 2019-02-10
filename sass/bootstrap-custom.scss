@@ -88,3 +88,7 @@ $dropdown-link-hover-bg: lighten($color-blue-gray, 60%) !default;
 // Tables
 $table-border-color: lighten($color-blue-gray, 50%) !default;
 $table-cell-padding: .4375rem !default;
+
+// Breadcrumbs
+$breadcrumb-bg: $color-white !default;
+$breadcrumb-divider: quote(">") !default;
