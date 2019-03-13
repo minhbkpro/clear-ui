@@ -1,3 +1,5 @@
+![](https://github.com/minhbkpro/clear-ui/blob/develop/screencapture.png?raw=true)
+
 # Run
 ```
 cd clear-ui
