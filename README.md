@@ -20,3 +20,14 @@ In main sass file include clear-ui like this:
 
 # include clear-ui-after-bootstrap.scss
 ```
+
+# Run project
+```
+gulp
+```
+
+# Deploy new version
+Change version in package.json and run command:
+```
+npm publish
+```
