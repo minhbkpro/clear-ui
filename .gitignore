@@ -7,3 +7,4 @@ docs/css/dist
 docs/dist
 dist
 .idea
+package-lock.json
