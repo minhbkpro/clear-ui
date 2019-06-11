@@ -77,3 +77,11 @@
   background-color: rgba(0, 0, 0, .1);
   color: #fff !important;
 }
+
+.sidebar .nav-link .fa-angle-right {
+  transition: transform .3s;
+}
+
+.sidebar .nav-link:not(.collapsed) .fa-angle-right {
+  transform: rotate(90deg);
+}
