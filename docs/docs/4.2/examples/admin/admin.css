@@ -1,4 +1,8 @@
-.navbar::after {
+.navbar {
+  height: 50px;
+}
+
+.navbar::before {
   content: '';
   display: block;
   position: absolute;
@@ -9,14 +13,25 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.navbar .avatar-sm {
-  width: 1.25rem;
-  height: 1.25rem;
+.navbar .avatar {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 100%;
+  background: #fff;
+}
+
+.navbar .name {
+  padding-left: .3rem;
+  padding-right: .3rem;
 }
 
 .navbar .nav-link {
-  padding: .75rem !important;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: .75rem !important;
+  padding-right: .75rem !important;
 }
 
 .navbar .nav-link.active,
@@ -30,6 +45,10 @@
   border-top-right-radius: 0;
   border-top: 0;
   margin-top: 0;
+}
+
+.navbar .navbar-nav {
+  height: 100%;
 }
 
 .navbar .navbar-nav .nav-item:not(:last-child) .nav-link::after {
