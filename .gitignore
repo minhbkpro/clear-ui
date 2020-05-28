@@ -8,3 +8,4 @@ docs/dist
 dist
 .idea
 package-lock.json
+docs/.jekyll-cache/
